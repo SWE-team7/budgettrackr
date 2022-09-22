@@ -137,7 +137,22 @@ being bought more often than others when comparing.
 <hr style="border:0.5px solid grey">
 
 # Interview 6:
-## Interviewee: 
+## Interviewee: Ebben Aries
+## Interviewer: Akiel Aries
+## When: 9/22/2022
+### Consumer Segments: 
+Online shopper
+
+### Key Insights:
+
+### Assessment: Must Have/Nice to Have/Don’t Care
+
+## Summary:
+
+<hr style="border:0.5px solid grey">
+
+# Interview 7:
+## Interviewee: Michael Percy
 ## Interviewer: Akiel Aries
 ## When: 9/22/2022
 ### Consumer Segments: 
