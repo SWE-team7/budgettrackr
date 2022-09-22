@@ -24,7 +24,9 @@ in-person, however, when questioning I asked what would bring him to this websit
 to possibly shop online more often. His biggest concern was being able to see 
 the product and be able to compare for bulk purchases. May want to incorporate 
 a graph which compares quantity as well as price.
-—----------------------------------------------------------------------------------------------------------------------------
+
+<hr style="border:0.5px solid grey">
+
 # Interview 2:
 ## Interviewee: Dominic Torricelli
 ## Interviewer: Brandon Mack
@@ -50,7 +52,9 @@ This consumer fits into our main target audience of being a casual online custom
 who would check a few websites before making a purchase. Their focus seemed to be 
 on usability/readability and general UI concerns. Adding options to tweak the 
 graphs may be the best way to go when designing the working product.
-—----------------------------------------------------------------------------------------------------------------------------
+
+<hr style="border:0.5px solid grey">
+
 # Interview 3:
 ## Interviewee: Bobby McClung
 ## Interviewer: Brandon Mack
@@ -73,7 +77,9 @@ This consumer was a Loyal-to-One consumer targeting Amazon and infrequently
 Google shopping tab. He didn’t think he’d have too much to add but favored more
 targeted materials in contrast to privacy concerns. Finally, he wanted the website 
 to “make the reading for him” in a way that transcribes the information into simplicity.
-—----------------------------------------------------------------------------------------------------------------------------
+
+<hr style="border:0.5px solid grey">
+
 # Interview 4:
 ## Interviewee: Bryan Augustus
 ## Interviewer: Braedon Behnke
@@ -96,7 +102,9 @@ Nice to Have: Website Links, Product Descriptions
 This consumer falls outside of our target market, however still provided some 
 great insights through the perspective of a deal seeker who already knows where 
 the cheapest options are for a given product.
-—----------------------------------------------------------------------------
+
+<hr style="border:0.5px solid grey">
+
 # Interview 5:
 ## Interviewee: Gavin Russell
 ## Interviewer: Kyler Conant
@@ -126,5 +134,17 @@ the have the cheapest price to the most expensive for the brand and also suggest
 a sales tracker rather than a price tracker because they rather see a product 
 being bought more often than others when comparing. 
 
+<hr style="border:0.5px solid grey">
 
+# Interview 6:
+## Interviewee: 
+## Interviewer: Akiel Aries
+## When: 9/22/2022
+### Consumer Segments: 
+Online shopper
 
+### Key Insights:
+
+### Assessment: Must Have/Nice to Have/Don’t Care
+
+## Summary:
