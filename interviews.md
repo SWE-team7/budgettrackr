@@ -19,7 +19,11 @@ Must have: See as much as possible
 Nice to have: complementary comparisons with volatility
 Nice to have: recent news articles on the product
 ## Summary:
-This consumer falls outside of our hypothesized best audience as he mainly shops in-person, however, when questioning I asked what would bring him to this website to possibly shop online more often. His biggest concern was being able to see the product and be able to compare for bulk purchases. May want to incorporate a graph which compares quantity as well as price.
+This consumer falls outside of our hypothesized best audience as he mainly shops 
+in-person, however, when questioning I asked what would bring him to this website 
+to possibly shop online more often. His biggest concern was being able to see 
+the product and be able to compare for bulk purchases. May want to incorporate 
+a graph which compares quantity as well as price.
 —----------------------------------------------------------------------------------------------------------------------------
 # Interview 2:
 ## Interviewee: Dominic Torricelli
