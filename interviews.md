@@ -102,3 +102,6 @@ Google Search Interface: Don't care
 Product description: Nice to Have
 ## Summary:
 This consumer said they don't often shop online but may look at prices every 2 weeks - a month. When searching for a product they don't compare prices because they are just looking for a certain item and they have a trusted brand to look for. A shopping preference for them is considered Amazon, Amazon is also consider their top website to go to when online shopping. If they were to go in person to a store though it would most likely be best buy. The consumer suggested sorting the have the cheapest price to the most expensive for the brand and also suggested a sales tracker rather than a price tracker because they rather see a product being bought more often than others when comparing. 
+---
+
+
