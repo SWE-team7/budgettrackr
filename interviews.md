@@ -81,4 +81,24 @@ Nice to Have: Website Links, Product Descriptions
 
 ## Summary: 
 This consumer falls outside of our target market, however still provided some great insights through the perspective of a deal seeker who already knows where the cheapest options are for a given product.
+—----------------------------------------------------------------------------------------------------------------------------
+# Interview 5:
+## Interviewee: Gavin Russell
+## Interviewer: Kyler Conant
+## When: 9/21/2022
+### Consumer Segments: 
+In-person Shopper
 
+### Key Insights:
+Ensure sorting for easy access to the cheaper option
+Possibly might not need a price tracker but a sales tracker
+Ensure links to specific product when having that product displayed
+
+### Assessment: Must Have/Nice to Have/Don’t Care
+Price Tracker: Don't Care
+Multiple Website Comparisons: Nice to have
+Links to websites: Must Have
+Google Search Interface: Don't care
+Product description: Nice to Have
+## Summary:
+This consumer said they don't often shop online but may look at prices eve+ry 2 weeks - a month. When searching for a product they don't compare prices because they are just looking for a certain item and they have a trusted brand to look for. A shopping preference for them is considered Amazon, Azazon is also consider their top website to go to when online shopping. If they were to go in person to a store though it would most likely be best buy. The consumer suggested sorting the have the cheapest price to the most expensive for the brand and also suggested a sales tracker rather than a price tracker because they rather see a product being bought more often than others when comparing. 
