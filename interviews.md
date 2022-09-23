@@ -10,9 +10,9 @@ In-person Shopper
 * Multiple images may be a good feature
 * Volatility is a nice feature
 * Far future development in AR versions of a product
-* Representative Quotes:
-* “What you see might not be what you get”
-* “Largest quantity is a priority”
+### Representative Quotes:
+> “What you see might not be what you get” <br>
+> “Largest quantity is a priority” <br>
 ### Assessment: Must Have/Nice to Have/Don’t Care
 * Must have: Quantity provided
 * Must have: See as much as possible
