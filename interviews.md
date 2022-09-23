@@ -141,7 +141,8 @@ being bought more often than others when comparing.
 ## Interviewer: Akiel Aries
 ## When: 9/22/2022
 ### Consumer Segments: 
-Online shopper
+* Audience: Online shopper
+* Occupation: Architect @ Juniper Networks
 
 ### Key Insights:
 
@@ -160,21 +161,25 @@ Online shopper
 ## Interviewer: Akiel Aries
 ## When: 9/22/2022
 ### Consumer Segments: 
-Mostly in person, sometimes online 
+* Audience: Mostly in person shopping, sometimes online
+* Occupation: Business, Economics @ CU Boulder
 
 ### Key Insights:
 * Offer option to compare reviews on products, sort result based on that 
 * To maximize the financial aspect of the product, offer ways to view deals, coupons, 
 etc
+
 ### Representative Quotes:
 > I do most of my shopping in person but I know there is a lot of people who could
 use something like this
+
 ### Assessment: Must Have/Nice to Have/Don’t Care
 * Price Tracker: Don't Care
 * Multiple Website Comparisons: Nice to have
 * Links to websites: Nice to have
 * Google Search Interface: Must have
 * Product description: Nice to have
+
 ## Summary:
 The customer is not an avid online shopper and only partakes occasionally. Admitted to 
 possibly not using the product themselves but sees a huge need for something in todays
