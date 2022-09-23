@@ -142,17 +142,28 @@ being bought more often than others when comparing.
 ## When: 9/22/2022
 ### Consumer Segments: 
 * Audience: Online shopper
-* Occupation: Architect @ Juniper Networks
+* Occupation: Software Architect @ Juniper Networks
 
 ### Key Insights:
+* Sees use in produce, says themself and consumers in general are always in 
+  search of the best deal but isn't the sole variable to making a purchasing decision
+* Seller reputation often outweighs price, how can we take this into account?
+* Sees some potential issues: 
+    - Valid, reputable and accurate data sources (Similar product differentiation)
+    - Stable and structured APIs
+    - Scale and optimization - translates into UX(speed (Both
+      at the ultimate data source and any local data/caches)
 
 ### Assessment: Must Have/Nice to Have/Don’t Care
-* Price Tracker: 
-* Multiple Website Comparisons: 
-* Links to websites: 
-* Google Search Interface: 
-* Product description: 
+* Price Tracker: Must Have
+* Multiple Website Comparisons: Must Have
+* Links to websites: Must Have
+* Google Search Interface: Must Have
+* Product description: Must Have
 ## Summary:
+Consumer fits our target audience and had a great deal of insight on the product and 
+concerns for long term design and functionality. Offered some feedback on potential 
+issues that could arise. 
 
 <hr style="border:0.5px solid grey">
 
@@ -181,8 +192,37 @@ use something like this
 * Product description: Nice to have
 
 ## Summary:
-The customer is not an avid online shopper and only partakes occasionally. Admitted to 
+The consumer is not an avid online shopper and only partakes occasionally. Admitted to 
 possibly not using the product themselves but sees a huge need for something in todays
 market. The customer also offered great suggestions to maximize our product like deal and
 coupon search filtering. 
 
+<hr style="border:0.5px solid grey">
+
+# Interview 8:
+## Interviewee: Yobe Haile
+## Interviewer: Akiel Aries
+## When: 9/22/2022
+### Consumer Segments: 
+* Audience: Online shopper
+* Occupation: CS @ CU Boulder, Research Assistant @ Donaldson Lab
+
+### Key Insights:
+* some sites like amazon and newegg have 3rd-part resellers that can vary in price,
+  how can we track and differentiate?
+* has experience w/ data mining, can see issues with scraping data from different sites
+  in a neat way. How can we dynamically parse data that comes in a variety of formats?
+
+### Assessment: Must Have/Nice to Have/Don’t Care
+* Price Tracker: Must have
+* Multiple Website Comparisons: Must have
+* Links to websites: Nice to have
+* Google Search Interface: Must have
+* Product description: Nice to have
+
+## Summary:
+The consumer is an avid online shopper and meets our target audience. Admitted to seeing 
+its use and purpose for solving a real world problem. Offered great insight on some 
+potential problems we could run into. 
+
+<hr style="border:0.5px solid grey">
