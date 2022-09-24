@@ -1,3 +1,9 @@
+# Project Inception
+_Group 07 – “[Don't Panic!]”\
+Date and location: Sep 24, 2022\
+Group Members: Braedon Behnke, Akiel Aries, Kyler Conant, Brock Heinz,
+Brandon Mack
+
 # 1. Introduction
 Project is mainly focused on monitoring price trends and offering buyer’s 
 services informing our clients on trends and comparisons. The outline of 
