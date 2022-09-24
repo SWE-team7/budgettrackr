@@ -1,8 +1,27 @@
 # 1. Introduction
+Project is mainly focused on monitoring price trends and offering buyer’s 
+services informing our clients on trends and comparisons. The outline of 
+the project will have our clients search for a product of their choice and 
+then have multiple vendors display and show a price trend visualization. 
+This will help us understand what prices are at a high value at a certain 
+vendor and which vendor will be a cheaper option. This will eventually lead 
+to a build of a website that will be valuable to the consumer as they don't 
+have to go to all websites to find the cheaper option.
 
 # 2. Initial value proposition and consumer segments
-
-
+The value for this proposition is considered very valuable in our eyes. 
+As this product will show trends and track prices for a certain product. 
+Not only will this help consumers save money but also see what vendor is at 
+its lowest selling point during this time. Our target customer would be 
+someone who shops online. While partaking in online shopping we can have a 
+website that compares all popular websites to find the cheapest product 
+searched for. The value we provide is ease of use and transparency to seeing 
+how prices are on different websites. This will provide the value of life to 
+relieve the hassle of moving from website to website and making sure you make 
+the right decision to save more money on a certain product. Our product is 
+considered very unique because we believe there is not really a big competitor 
+out there. This is one if it’s kind showing a visualization of a price trend 
+of a certain product with multiple big companies being compared. 
 
 # 3. Interviews summary
 
