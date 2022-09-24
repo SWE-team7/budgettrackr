@@ -1,5 +1,5 @@
 # Project Inception
-_Group 07 – “[Don't Panic!]”\
+_Group 07 – “[budgettrackr!]”\
 Date and location: Sep 24, 2022\
 Group Members: Braedon Behnke, Akiel Aries, Kyler Conant, Brock Heinz,
 Brandon Mack
