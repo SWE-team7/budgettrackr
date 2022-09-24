@@ -260,8 +260,8 @@ potential problems we could run into.
 
 <hr style="border:0.5px solid grey">
 
-4. Final value proposition and consumer segments
-**Final Value Proposition:** Budgettrackr free, small-scale, price comparison
+# 4. Final value proposition and consumer segments
+**Final Value Proposition:** Budgettrackr is a free, small-scale, price comparison
 application that allows online shoppers to compare prices of products between 
 different websites and view price trends to make an educated decision. 
 
