@@ -1,1 +1,5 @@
-Delete this file after pull request.
+Brandon Mack - (25%) Worked on Functional Requirements(Features) and Did MVP by himself
+Braedon Behnke - (15%) Worked on user stories and worked on use case descriptions and interface sketches
+Akiel Aries - (25%) Worked on Non-functional requirements and worked on use case descriptions and interface sketch and user stories, also worked on problem statement, product position statement, and Value proposition and customer segment.
+Kyler Conant - (20%) Worked on Value proposition and customer segment, Stakeholders, Functional requirements, Use case descriptions and interface sketch, User stories, and Issue tracker
+Brock Heinz - (15%) Worked on Use case diagram and Use case descriptioins and interface sketch, also did user stories
