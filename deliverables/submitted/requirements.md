@@ -220,7 +220,7 @@ display a detailed graph of the vendor’s pricing of that product over time.
 ![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_history.png)
 
 
-7. **User stories**
+# 7. **User stories**
 1) As an online shopper, I want an easy-to-use tool so that I can get the best prices on the 
 things I purchase.
 - Priority #6 (moderate priority); about 4 hours
@@ -264,7 +264,7 @@ manage this branch.
 deals on pearls, so that I can have more money, and my first dollar.
 - Priority #6 (moderate priority); about 2 hours
 
-**8. Issue Tracker**
+# **8. Issue Tracker**
 
 The user stories should be registered in your GitHub issue tracker. Include here the link 
 for your issue tracker and a screenshot of what you did.
