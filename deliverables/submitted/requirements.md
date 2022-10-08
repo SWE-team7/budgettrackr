@@ -8,7 +8,7 @@ Members : Braedon Behnke, Akiel Aries, Kyler Conant, Brock Heinz, Brandon Mack
 
 **The problem of** *[bouncing between websites for the best deal]* \
 **affects** *[online shoppers, resellers, high-price item buyers]* \
-**the impact of which is** *[Shoppers are spending more on a product that they could’ve]* \
+**the impact of which is** *[Shoppers are spending more on a product than they should’ve]* 
 
 ## 1.2 **Product Position Statement**
 
@@ -19,7 +19,7 @@ of different products]* \
 **That** *[allows you to view prices, trends, and other information on products to make the 
 best educated decision on a purchase]* \
 **Unlike** *[google]* \
-**Our product** *[provides visualizations of price trends]* \
+**Our product** *[provides visualizations of price trends]* 
 
 ## 1.3 **Value proposition and customer segment**
 
