@@ -1,80 +1,46 @@
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.001.png)
+# Requirements
+Group 07 : budgettrackr \
+Date : 10/07/2022 \
+Members : Braedon Behnke, Akiel Aries, Kyler Conant, Brock Heinz, Brandon Mack
 
-**CS 386 – Software Engineering**
+# 1. **Positioning**
+## 1.1 **Problem statement**
 
-**Team Project – D.2 Requirements**
+**The problem of** *[bouncing between websites for the best deal]* \
+**affects** *[online shoppers, resellers, high-price item buyers]* \
+**the impact of which is** *[Shoppers are spending more on a product that they could’ve]* \
 
-**Grading:** 30 points
+## 1.2 **Product Position Statement**
 
-In this deliverable, you will report the results for the requirements engineering for your product. Structure your deliverable using the following sections.
+**For** *[online shoppers]* \
+**Who** *[for those wanting the best price]* \
+**The (product name)** *[budgettrackr] is a [application allowing the user to compare prices 
+of different products]* \
+**That** *[allows you to view prices, trends, and other information on products to make the 
+best educated decision on a purchase]* \
+**Unlike** *[google]* \
+**Our product** *[provides visualizations of price trends]* \
 
-1. **Positioning**
-1. **Problem statement**
+## 1.3 **Value proposition and customer segment**
 
-Provide a statement to summarize the problem solved by your project according to the following structure (which is based on the OpenUP Vision Template[^1]):
-
-
-
-|The problem of|*[bouncing between websites for the best deal]*|
-| - | - |
-|affects|*[online shoppers, resellers, high-price item buyers]*|
-|the impact of which is|*[Shoppers are spending more on a product that they could’ve]*|
-Example of a problem statement: “The problem of *inefficient prioritization of homework assignments* affects *college students*; the impact of which is *delivering assignments past due and receiving low grades*.” The problem should read as a problem (must be something bad that makes people spend time or money in an inefficient way.
-
-2. **Product Position Statement**
-
-A product position statement communicates the intent of the application and the importance of the project to all concerned personnel. The product should mitigate the aforementioned problem. Provide a statement according to the following structure:
-
-|For|*[online shoppers]*|
-| - | - |
-|Who|*[for those wanting the best price]*|
-|The (product name)|*[budgettrackr] is a [application allowing the user to compare prices of different products]*|
-|That|<p>*[statement of key benefit; that is, the compelling reason to buy]*</p><p>*[this product allows you to view prices, trends, and other information on products to make the best educated decision on a purchase]*</p>|
-
-
-|Unlike|*[primary competitive alternative] [unlike google]*|
-| - | :- |
-|Our product|*[provides visualizations of price trends]*|
-Example of a product position statement: “For *college students who have many parallel homework assignments*, *MyPrioritizationApp* is a *planning app* that *crowdsources the identification of complexity and time necessary to accomplish assignments, supporting the informed prioritization*; unlike *myHomework Student Planner*, our product *does not rely on the judgment of a student who hasn’t started the homework yet*.” Make sure your product position statement is related to your problem.
-
-3. **Value proposition and customer segment**
-
-Report the value propositions and customer segments of your product. Make sure that your value proposition is coherent with the product position statement and contains the following elements: i) what your product is; ii) the target customer; iii) the value your product provides; and iv) why your product is unique.
-
-Example:
-
-**Value proposition:** *MyPrioritizationApp is a crowdsourced planning app* {(i) what your product is} *that allows college students* {(ii) target costumer} *to make better use of their time* {(iii) the value your product provides}*, prioritizing homework based on more accurate information of required time and complexity of the assignments*{(iv) why your product is unique}*.”*
-
-**Consumer segment:** *College students who have many parallel homework assignments*
-
-*Grading criteria* (3 points, 1 for each section): The content of the subsections should contain all the required elements, follow the provided template, and be consistent with each other. The text should not contain typos or grammar issues.The value for this proposition is considered very valuable in our eyes. As this product will show trends and track prices for a certain product. Not only will this help consumers save money but also see what vendor is at its lowest selling point during this time. Our target customer would be someone who shops online. While partaking in online shopping we can have a website that compares all popular websites to find the cheapest product searched for. The value we provide is ease of use and transparency to seeing how prices are on different websites. This will provide the value of life to relieve the hassle of moving from website to website and making sure you make the right decision to save more money on a certain product. Our product is considered very unique because we believe there is not really a big competitor out there. This is one if it’s kind showing a visualization of a price trend of a certain product with multiple big companies being compared.
-
-**Value proposition and customer segment**
-
-**Value proposition:**
-
+**Value Proposition**
 1) what your product is: budgettrackr is a application where you compare prices
 1) the target customer: Online Shoppers
-3) the value your product provides: Makes better use of time, helps show a product from different vendors on one website.
-3) why your product is unique: Our product is unique because it takes in multiple websites to find the best price for the product searched.
+3) the value your product provides: Makes better use of time, helps show a product from 
+different vendors on one website.
+5) why your product is unique: Our product is unique because it takes in multiple websites 
+to find the best price for the product searched.
 
 **Consumer Segment:** Online Shoppers who do want to save money and look for the best price.
 
-2. **Stakeholders**
-
-Make a list of all stakeholders of the project with a brief description of each one of them, emphasizing any responsibilities with the project. Examples of stakeholders include users, clients, competitors, detractors, developers, etc.
-
-*Grading criteria* (1 point): The stakeholders can’t be too generic or specific. The list should reflect what was described in Section 1.
-
+# 2. **Stakeholders**
 - Users: Online shoppers (to shop online / use our program)
-- Competitors: Honey (possibly showing other website prices for cheaper / deals), Google shop (showing quick and different price results of different websites)
-- Developers: CS386 students (Building a product that can compare prices of a product through big companies)
-3. **Functional requirements (features)**
+- Competitors: Honey (possibly showing other website prices for cheaper / deals), Google 
+shop (showing quick and different price results of different websites)
+- Developers: CS386 students (Building a product that can compare prices of a product through 
+big companies)
 
-Make a numbered list of requirements for your software. Just self-explanatory titles are enough at this point. Remember that requirements should deliver the value proposition and they must be consistent with the interviews you performed for the previous deliverable. You can talk again to your clients to help define the requirements. While writing the requirements, focus on capabilities needed and not on how they should be implemented.
-
-*Grading criteria* (2 points): The list should be comprehensive (remember that you are not expected to implement all the requirements by the end of the course but you should list them). Follow the same pattern to describe all the requirements. The list of requirements should be coherent with the previous sections.
-
+# 3. **Functional requirements (features)**
 - Able to search for a product.
 - Able to see prices of products from said company.
 - Sorting products from least to greatest price.
@@ -86,157 +52,221 @@ Make a numbered list of requirements for your software. Just self-explanatory ti
 - Graph filters such as timeframe and collapsing all to one graph will be usable.
 - Viewable on desktop browser.
 - Developed using HTML and PyScript.
-4. **Non-functional requirements**
 
-Make a numbered list of non-functional requirements that are important for your software. Explain their importance. Follow the terminology of ISO/IEC 25010:2011. For each non-functional requirement, give an objective goal/measurement in order to provide verifiability for the requirement. You can find more details at the following URL: <https://www.dropbox.com/s/o7jekzuxojc2ywo/ISO-IEC-IEEE-29148.pdf?dl=0>
 
-*Grading criteria* (2 points): Follow the ISO-IEC terminology, explain why they are important, and provide verifiability criteria for each requirement.
+# 4. **Non-functional requirements**
+1) Response Time:
+  - We are not certain on the latency associated with certain functionalities such as 
+  the web scrubbing utility.
+  - Goal: When searching for a product offer a warning of possible latency issues 
+  involved with parsing big data but assure a response time of under 15 seconds. 
 
-1. Availability: It is hard to judge the availability of our service especially taking into account the amount of traffic our product may induce.
-1. Response Time: We are not certain on the latency associated with certain functionalities such as the web scrubbing utility.
-1. Reliability
-1. Portability: We are not sure if this piece of software will run on just any operating system.
-1. Accuracy:
+2) Reliability
+  - Goal: For this we will test use of our tool in short term segments and assure 
+  uptime of at least 90%+
 
-It is hard to judge the accuracy of the data mined with our web scraping utility.
+3) Portability: 
+  - We are not sure if this piece of software will run on just any device such as mobile.
+  - Goal: To verify our product, our software will be tested on our developers machines 
+  ensuring 90% of customers using our tool on desktop a satisfactory experience.  
 
-5. **MVP**
+4) Accuracy:
+  - It is hard to judge the accuracy of the data mined with our web scraping utility.
+  - Goal: The accuracy of our results will leave 8/10 customers happy with their experience.  
 
-What will be your MVP? Which features are you going to validate? How?
+# 5. **MVP**
 
-*Grading criteria* (2 points): Describe what would be considered the Minimal Viable Product and how it will be tested (e.g., via implementation, prototyping, Wizard of Woz, etc.). Make clear what you are going to validate. The MVP should be coherent with the previous sections.
+Our Minimum Viable Product should at least be able to properly incorporate our required 
+features for a product category such as our currently planned focus on computer processors. 
+Our webpage will show various processors of different brands and prices, and be able to 
+display these list prices over the past 30 and 90 day periods from at least 4 different 
+sources - namely Amazon, Newegg, Best Buy, and either Walmart or Gamestop with preference 
+towards Gamestop. These will all have valid links to the product page. Used markets will 
+be avoided, although links to ebay search results will be included on the webpage. In 
+addition to price data, pictures from multiple sources will be collected directly from 
+the listings (so as to avoid possible google errors) as well as a general description of 
+the product in addition to relevant specifications. These will be implemented through HTML 
+and PyScript, and utilizing relevant APIs in calculations and data. This website will not 
+have a registered domain name for testing, nor will we seek to establish an accessible 
+server. Instead we will use a tool which allows hosting a local webpage to test our products 
+usage with the APIs. The data should be consistent with Honey price tracking extension and 
+show all these webpages at once with prices over the formerly described intervals. The webpage 
+should be properly formatted and navigable between off-site and on-site links (related
+products, homepage, and categories of which we will have one). The pictures should also 
+be fully viewable, and description/specs legible on desktop.
 
-Our Minimum Viable Product should at least be able to properly incorporate our required features for a product category such as our currently planned focus on computer processors. Our webpage will show various processors of different brands and prices, and be able to display these list prices over the past 30 and 90 day periods from at least 4 different sources - namely Amazon, Newegg, Best Buy, and either Walmart or Gamestop with preference towards Gamestop. These will all have valid links to the product page. Used markets will be avoided, although links to ebay search results will be included on the webpage. In addition to price data, pictures from multiple sources will be collected directly from the listings (so as to avoid possible google errors) as well as a general description of the product in addition to relevant specifications. These will be implemented through HTML and PyScript, and utilizing relevant APIs in calculations and data. This website will not have a registered domain name for testing, nor will we seek to establish an accessible server. Instead we will use a tool which allows hosting a local webpage to test our products usage with the APIs. The data should be consistent with Honey price tracking extension and show all these webpages at once with prices over the formerly described intervals. The webpage should be properly formatted and navigable between off-site and on-site links (related products, homepage, and categories of which we will have one). The pictures should also be fully viewable, and description/specs legible on desktop.
+# 6. **Use cases**
+## 6.1 **Use case diagram**
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/use_case_diagram.png)
 
-6. **Use cases**
-1. **Use case diagram**
-
-Include a UML use case diagram for your project. There are many drawing tools that you can use, such as <https://app.diagrams.net/> and <https://creately.com/>
-
-*Grading criteria* (5 points): Follow correctly the UML specification. The actors should be coherent with what was listed in sections 1 and 2. The use case diagram should be coherent with the list of requirements (section 3). The level of granularity of each use case should be adequate. The use cases should be adequately named.
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.002.png)
-
-2. **Use case descriptions and interface sketch**
-
-Present one complete use case description for each member of the group. Therefore, if the group has 4 members, 4 use case descriptions are necessary. As the grading will not be individual, the group is responsible for keeping the quality and consistency of the whole document – avoid just splitting the work. Choose the most important use cases to describe. Follow the template provided by OpenUP to describe the use cases (see also the example): [https://people.cs.clemson.edu/~johnmc/courses/Publish/openup/guidances/templates/reso urces/uc_specification_tpl.dot](https://people.cs.clemson.edu/~johnmc/courses/Publish/openup/guidances/templates/resources/uc_specification_tpl.dot)
-
-After each use case description, add a sketch of the corresponding user interface. This will be a good opportunity to start thinking about usability.
-
-*Grading criteria* (8 points): Follow the template to describe the use cases. Present an interface sketch for each use case. Describe the use case as a dialog between the user and the system. Do not use UI language in the description of the use case.
-
+## 6.2 **Use case descriptions and interface sketch**
 Use Case: Search for product
+- **Actor**: Shopper
+- **Description**: Shopper will enter the name of a product into a search bar, and choose an item from a list of relevant results.
+- **Preconditions**: Web Page must be open.
+- **Main Flow**: 
+    1) The shopper opens the website at budgettrackr.com
+    2) The shopper types in the name of a desired product into the search bar
+    3) The shopper submits the search term, bringing up a list of relevant results
+    4) The shopper selects the specific product they want by clicking its name
+    5) The product’s information is shown, including an expanded description
+- **Alternate Flow**:
+    1) If shopper cannot find specific product they want they will see the closes option to the product they typed
+    2) Then continue as needed
+- **Key Scenarios**:
+    * Bill needed a quick way to search for a dinner table set on many different websites on one site. 
+    Bill visited the budgttrackr website and found many other dinner table sets on many different 
+    websites from many different vendors! 
+- **Postconditions**: Finding the product
 
-Actor: Shopper
-
-Description: Shopper will enter the name of a product into a search bar, and choose an item from a list of relevant results.
-
-Preconditions: Web Page must be open.
-
-Main Flow: Searching
-
-Postconditions: Finding the product
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.003.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/search.png)
 
 Use Case: View Price Information
+- **Actor**: Shopper
+- **Description**: The user will be able to view the price information for the given product they search for
+- **Preconditions**: Shopper is on the website
+- **Main Flow**: 
+    1) Shopper uses the search bar to type in the desired product
+    2) The website will return products that match 
+    3) The use case ends
+- **Subflow**:
+    1) The user can click on a desired product from the list to view more information and purchase. 
+    2) The shopper can also browse the returned list and view products and their descriptions. 
+- **Key Scenarios**:
+    - Jim, an up and coming event planner, wants to find the best deal on napkins for an upcoming event. 
+    Jim can visit the budgettrackr webpage and use the search bar to view matches for his search. Jim 
+    can now choose to browse the list and view descriptions or click on each product for more 
+    information and to potentially purchase. 
+- **Postconditions**: Price information is displayed and the shopper can view any of the listed items. 
 
-Actor: Shopper
-
-Description: The user will be able to view the price information for the given product they search for
-
-Preconditions: Shopper will search for an item and select one from the list of results Main Flow: Seeing a price
-
-Postconditions: Price information is displayed
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.004.jpeg)
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_info.png)
 
 Use Case: Price Analysis
+- **Actor**: Trend Analyst
+- **Description**: Trend Analyst wants to compare prices of a product over the last 30 days to 
+understand whether this product group may be collectively dropping or rising recently.
+- **Preconditions**: The website is already open.
+- **Main Flow** : 
+    1) Search the product name in the search bar and click search.
+    2) Select a product and click Analyze Price button to display price information and graphs
+    3) Filter graphs on the right side to overlay onto one graph over the last 30 days.
+    4) Follow the line to see if the slope has hit a peak or is climbing to one recently.
+    5) The use case ends
+- **Alternative Flow**:
+    1) If in step 1 of the basic flow, the actor instead searches the overall product category, 
+    then they select the product based off of the category from a search menu
+    2) The use case resumes at step 2.
+- **Key Scenarios**:
+    - Scenario 1: Bob, the computer salesperson has heard about a recent surge in the prices 
+    of graphics cards. He uses budgettrackr in order to investigate for himself.
+      1) Bob searches graphics cards in the search bar.
+      2) Bob selects from the most relevant results, choosing a GTX 1060 as it is familiar to him and an older card.
+      3) Bob filters the graphs on the right side to show information over the past 30 days and collapses them to one graph.
+      4) Bob finds that the lines all trend upwards and have not hit a new peak for this aging card.
+- **Postconditions**: Draw conclusions based on empirical evidence.
 
-Actor: Trend Analyst
-
-Description: Trend Analyst wants to compare prices of a product over the last 30 days to understand whether this product group may be collectively dropping or rising recently. Preconditions: Product page is open on desired product.
-
-Main Flow: Making graphs filtered for 30 days, collapsing all results to one graph. Postconditions: Observing rising or falling prices.
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.005.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_analysis.png)
 
 Use Case: Compare Prices
+- **Actor**: Shopper
+- **Description**: The shopper will be able to view prices for a given product from multiple different sources.
+- **Preconditions**:
+    1) The shopper has the website opened
+    2) The shopper is searching for a product which is visible on the website
+- **Main Flow**: 
+    1) Search the product name in the search bar and press Enter.
+    2) Click on the desired product
+    3) Click on the Analyze Price button to display price histories and price comparisons
+    4) Click on the Show Best Price button to highlight the cheapest product vendor
+- **Key Scenarios**:
+    - A father, Jesse, wants to get a large number of birthday presents for his son, whose birthday is 
+    approaching, but his budget is tight this year due to a recent minor car accident.  Jesse can use 
+    the BudgetTrackr website to find where he can get the birthday presents for the lowest price, 
+    maximizing his child’s joy on his birthday.
+      1) Jesse searches for his product in the website’s search bar.
+      2) Jesse selects the product that he believes his child would like most.
+      3) Jesse clicks on the “Analyze Price” button, revealing the current prices from all available 
+      vendors of the desired product.
+      5) Jesse clicks on the “Show Best Price” button to highlight the cheapest product vendor
+      6) Jesse finds that one of the vendor graphs has a green outline with the caption “Best Price”, 
+      showing which vendor sells the desired product for the lowest cost.
+- **Postconditions**: Observing which online vendors are selling products for lower/higher prices.
 
-Actor: Shopper
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_compare.png)
 
-Description: The shopper will be able to view prices for a given product from multiple different sources.
+Use Case: Display Price History
+- **Actor**: Shopper
+- **Description**: The shopper will be able to select a given vendor selling the product, and 
+display a detailed graph of the vendor’s pricing of that product over time.
+- **Preconditions**: Web Page must be open.
+- **Main Flow**: 
+    1) Search the product in the search bar then press enter
+    2) Desired product is shown 
+    3) Prices trends are displayed
+    4) Expand the price graph of a specific vendor
+    5) Mouse over a segment of the graph to display the price at that specific point in time
+- **Alternative Flow**: N/A
+- **Key Scenario**:
+  - Karen wanted to see other vendors at the same time with a price history graph with a 
+  certain product that she wants to find. Karen used budgettrackr to look up a medkit and see price history 
+    1) Karen searches for the product in the site’s search bar
+    2) Karen selects the medkit she’s looking for
+    3) Karen clicks the Analyze Price button to bring up the vendor information
+    4) Karen clicks on the expand button on the corner of a vendor she’s interested in
+    5) Karen looks at the expanded graph and mouses over the point in time she wanted to know about
+    6) Karen sees the price at the given point in time	
+- **Postconditions**: Finding the product prices
 
-Preconditions: Shopper will search for a product and view price information
+![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_history.png)
 
-Main Flow: Seeing multiple prices from different sellers
-
-Postconditions: Observing which sellers are selling products for cheaper/more expensive prices.
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.006.jpeg)
-
-Use Case: See price analysis
-
-Actor: Shopper
-
-Description: Shopper will enter the name of a product into a search bar, and then see a value of the prices showing past prices.
-
-Preconditions: Web Page must be open.
-
-Main Flow: Searching
-
-Postconditions: Finding the product prices
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.007.jpeg)
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.008.jpeg)
 
 7. **User stories**
+1) As an online shopper, I want an easy-to-use tool so that I can get the best prices on the 
+things I purchase.
+- Priority #6 (moderate priority); about 4 hours
 
-Write two user stories for each member of the group. They can be related to the same features described in the use cases or to different ones. Adopt the following format: "As a <ROLE>, I want <SOMETHING> so that <GOAL>."
+2) As a mother, I want an easy to use product that allows me to quickly look for the best deal 
+on back to school items to save time and money. 
+- Priority #7 (moderate-high priority); about 4 hours
 
-Establish a priority level for each user story and estimate how many hours each one will demand using the planning poker approach.
+3) As a college student, I would love a tool that would show me the cheapest price for a product 
+with one simple search in a visually appealing format. 
+- Priority #4 (moderate priority); about 6 hours
 
-1. As an online shopper, I want an easy-to-use tool so that I can get the best prices on the things I purchase.
-1. As a mother of four, I want a product that allows me to quickly look for the best deal on any given item to save time and money.
-1. As a college student, I would love a tool that would show me the cheapest price for a product with one simple search.
-1. As a deal seeker, I want a tool that lets me see the best times to shop for a product.
-1. As a shopper, I want to be informed about the cost of a product between multiple vendors so I can spend less.
-1. As a PC builder, I want to know if the price of an expensive part is trending down so I can make educated economic decisions.
-1. As a chronic gamer, I want to know the prices for new and old video games so that I spend the right amount of money on a game.
-1. As a single dad, I want a set of legos so my son will like me more, but I’m so I need the best price.
-1. As a McDonald's manager, I want new chairs for my restaurant so that customers will be happy in the establishment.
-1. As a Teacher, I want to get colored pencils for art so that my students can draw, but I’m a little poor right now!
+4) As a deal seeker, I want a tool that lets me see the best prices for a product, so that I can 
+save money on all of my purchases.
+- Priority #7 (moderate-high priority); about 6 hours
 
-*Grading criteria* (6 points): Use the provided format. The user stories should be in an adequate level of granularity (not too broad nor too specific). Provide the priority and estimation for each user story.
+5) As a trend analyst, I want a tool that allows me to view the best times to purchase a product 
+to maximize the financial justification of my investment. 
+- Priority #3 (low-moderate priority); about 8 hours
+
+6) As a shopper, I want to be informed about the cost of a product between multiple vendors so 
+that I can spend less on this purchase and more on future purchases.
+- Priority #4 (moderate priority); about 4 hours
+
+7) As a PC builder, I want to find the best price on components affected by shortages.
+- Priority #8 (high priority); about 4 hours
+
+8) As a chronic gamer, I want to see if a game has sold for less in the past, so that I can see 
+how much the publishing company is willing to mark down their product.
+- Priority #2 (low-priority); about 1 hour 
+
+9) As a single dad, I want to purchase presents at an all-time low price, so that I can save money 
+for Christmas.
+- Priority #5 (moderate priority); about 2-5 hours
+
+10) As a McDonald's manager, I want to find the best price on bulk items, so that I can effeciently 
+manage this branch.
+- Priority #8 (high priority); about 3 hours
+
+11) As the owner of the Krusty Krab, I want to limit my daughter’s purchases by finding her the best 
+deals on pearls, so that I can have more money, and my first dollar.
+- Priority #6 (moderate priority); about 2 hours
 
 **8. Issue Tracker**
 
-The user stories should be registered in your GitHub issue tracker. Include here the link for your issue tracker and a screenshot of what you did.
-
-*Grading criteria* (1 point): Provide the URL and screenshot of the issue tracker. The user stories should be registered there.
+The user stories should be registered in your GitHub issue tracker. Include here the link 
+for your issue tracker and a screenshot of what you did.
 
 URL: [Issues · SWE-team7/budgettrackr (github.com)](https://github.com/SWE-team7/budgettrackr/issues)
-
-![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.009.png)
-
-**Format**
-
-You can find on BBLearn instructions for the format and submission of the deliverables.
-
-**Example from the previous semester (not necessarily perfect or complete) <https://github.com/ChrisKeefe/DontPanic/blob/master/project_documentation/Requirements.md>**
-
-See also several commented examples from previous years on BB Learn, in which I describe the most common mistakes in the sections above: [https://docs.google.com/document/d/1HLrFTRupUPinqJviA6oOcDzRNZy2n4lSl8Mg7nLIMcQ/ edit?usp=sharing](https://docs.google.com/document/d/1HLrFTRupUPinqJviA6oOcDzRNZy2n4lSl8Mg7nLIMcQ/edit?usp=sharing)
-
-**Additional grading criteria**
-
-Your deliverable should have all the aforementioned sections and follow the instructions. The deliverable must be available on the GitHub repository and written in an md format. All headers should be larger text and bolded to stand out. The deliverable should be updated via pull requests, which should be reviewed and approved by the Quality Assurance person. The document should be written in an appropriate language.
-
-**Acknowledgment:** Parts of this document were adapted from OpenUP Templates
-
-**Feedback![](Aspose.Words.2dfcf8d4-4087-4a8f-9f9f-da974c5bf25d.010.png)**
-
-Didn’t like this assignment? Do you have suggestions? Please, let me know. <https://bit.ly/3vXiBCM>
-12
-
-[^1]: http://epf.eclipse.org/wikis/openup/
