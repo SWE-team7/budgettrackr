@@ -97,7 +97,7 @@ be fully viewable, and description/specs legible on desktop.
 
 # 6. **Use cases**
 ## 6.1 **Use case diagram**
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/use_case_diagram.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/use_case_diagram.png)
 
 ## 6.2 **Use case descriptions and interface sketch**
 Use Case: Search for product
@@ -119,7 +119,7 @@ Use Case: Search for product
     websites from many different vendors! 
 - **Postconditions**: Finding the product
 
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/search.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/search.png)
 
 Use Case: View Price Information
 - **Actor**: Shopper
@@ -139,7 +139,7 @@ Use Case: View Price Information
     information and to potentially purchase. 
 - **Postconditions**: Price information is displayed and the shopper can view any of the listed items. 
 
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_info.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/price_info.png)
 
 Use Case: Price Analysis
 - **Actor**: Trend Analyst
@@ -165,7 +165,7 @@ understand whether this product group may be collectively dropping or rising rec
       4) Bob finds that the lines all trend upwards and have not hit a new peak for this aging card.
 - **Postconditions**: Draw conclusions based on empirical evidence.
 
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_analysis.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/price_analysis.png)
 
 Use Case: Compare Prices
 - **Actor**: Shopper
@@ -192,7 +192,7 @@ Use Case: Compare Prices
       showing which vendor sells the desired product for the lowest cost.
 - **Postconditions**: Observing which online vendors are selling products for lower/higher prices.
 
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_compare.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/price_compare.png)
 
 Use Case: Display Price History
 - **Actor**: Shopper
@@ -217,7 +217,7 @@ display a detailed graph of the vendor’s pricing of that product over time.
     6) Karen sees the price at the given point in time	
 - **Postconditions**: Finding the product prices
 
-![](https://github.com/SWE-team7/budgettrackr/blob/D1.revisions/imgs/price_history.png)
+![](https://github.com/SWE-team7/budgettrackr/blob/main/imgs/price_history.png)
 
 
 # 7. **User stories**
