@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Simple scraping with beautifulsoup + requests. Spoofing machine + browser 
 information is necessary in order to extract data from amazon and perhaps 
@@ -12,9 +13,9 @@ from bs4 import BeautifulSoup as bs
 import lxml
 # lib for HTTP requests
 import requests
-#  
+# lib for setting up the director for our jira template file
 from jinja2 import Environment as j2_ENV
-# 
+# lib for loading our jira template file
 from jinja2 import FileSystemLoader as j2_FSL
 
 
@@ -91,6 +92,17 @@ class Product:
             - 'div' = the starting division to begin parsing
             - 'id' = unique ID for an HTML element
             - 'productOverview_feature_div' = the HTML we want to save
+        the idea is to first iterate over the tag before our list in addition to 
+        the list itself
+        """
+        details_fmt = []
+
+        for x in self.soup.find_all('table', attrs={'class': 'a-normal a-spacing-none a-spacing-top-base'}):
+            for tag in x.find_all('tr'):
+                details_fmt = tag.get_text()
+
+        return details_fmt
+
         """
         try:
             details = self.soup.find('div', attrs = {'id': 'productOverview_feature_div'})
@@ -101,6 +113,8 @@ class Product:
             details_fmt = "PRODUCT DETAILS NOT FOUND"
             
         return details_fmt
+        """
+
 
     def get_desc(self):
         """
@@ -119,7 +133,6 @@ class Product:
         except AttributeError:
             desc_fmt = "PRODUCT DESC NOT FOUND"
 
-        #print("Product Description: \n", desc_fmt)
         return desc_fmt
 
     def get_price(self):
@@ -130,13 +143,13 @@ class Product:
             - 'a-offscreen' = the HTML we want to save
         """
         try:
-            price = self.soup.find('span', attrs = 
-                              {'class': 'a-offscreen'}).string.strip().replace(',', '')
+            price = self.soup.find('span', 
+                                    attrs = {'class': 'a-offscreen'})\
+                                    .string.strip().replace(',', '')
         
         except AttributeError:
             price = "PRICE NOT FOUND"
         
-        #print("Price (USD): \n", price)
         return price
         
     def get_rating(self):
@@ -147,37 +160,38 @@ class Product:
             - 'a-icon-alt' = element to save
         """
         try:
-            rating = self.soup.find("span", attrs =
-                               {'class': 'a-icon-alt'}).string.strip().replace(',', '')
+            rating = self.soup.find("span", 
+                                    attrs = {'class': 'a-icon-alt'})\
+                                    .string.strip().replace(',', '')
+
         except AttributeError:
                 rating = "RATING NOT FOUND"
         
-        #print("Rating: \n", rating)
         return rating
 
     def get_num_ratings(self):
         """
-        function to retrieve the number of ratings an amazon product has been
+        function to retrieve the number of ratings an amazon product has been 
         given
             - 'span' = the starting inline container
             - 'id' = unique ID for an HTML element
             - 'acrCustomerReviewText' = the HTML we want to save
         """
         try:
-            ratings_num = self.soup.find('span', attrs = 
-                        {'id': 'acrCustomerReviewText'}).string.strip().replace(',', '')
+            ratings_num = self.soup.find('span', attrs = {'id': \
+                                        'acrCustomerReviewText'})\
+                                        .string.strip().replace(',', '')
 
         except AttributeError:
             ratings_num = "NUMBER OF RATINGS NOT FOUND"
         
-        #print("Number of Ratings: \n", ratings_num)
         return ratings_num
 
 def main():
     """
-    specifying user agent, other user agents available online  
-    for something stable or server-based, think of a function to parse a list
-    of user agents and swap on a time-based interval
+    specifying user agent, other user agents available online for something 
+    stable or server-based, think of a function to parse a list of user 
+    agents and swap on a time-based interval
     """
     user_agent = ({'User-Agent': 
                     'Mozilla/5.0 (X11; Linux x86_64) \
