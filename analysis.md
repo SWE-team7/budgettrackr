@@ -21,5 +21,5 @@ visualizing its *price history* as well as the <ins>**link**</ins> that referenc
 
 2. Model
 
-attach image
+![](https://github.com/SWE-team7/budgettrackr/blob/D3.aries/imgs/ClassDiagramD3.JPG)
 
