@@ -24,7 +24,8 @@ import re
 class Product:
     """
     product class that will provide easier use of inheritance for other classes
-    relying off the data collected from this class. 
+    relying off the data collected from this class. Product serves to gather 
+    the attribute of a given product. 
     Functions:
         - name()
         - details()
@@ -91,15 +92,16 @@ class Product:
         """
         function to retrieve details of an amazon product
             - 'table' = the starting division to begin parsing
-            - 'id' = unique ID for an HTML element
-            - 'productOverview_feature_div' = the HTML we want to save
-        the idea is to first iterate over the tag before our list in addition to
-        the list itself
+            - 'class' = attribute we want to search for
+            - 'tr' = unique ID for the element we want to save
+            - 'a-normal a-spacing-none a-spacing-top-base' = the HTML we want 
+            to save the idea is to first iterate over the tag before our list 
+            in addition to the list itself
 
         ISSUES:
             - when parsing the HTML elements, sometimes the list is saved as 
             empty. however, if I do a try/except AttributeError or an if/else
-            checking if the list is empty 
+            checking if the list is empty, empty brackets '[]' get printed 
 
         """
         # define our empty list to store the details in
@@ -122,21 +124,29 @@ class Product:
     def get_desc(self):
         """
         function to retrieve the description from of amazon product
-            - 'li' = the starting list to begin parsing
-            - 'id' = unique ID for an HTML element
-            - 'a-spacing-small' = the HTML we want to save
+            - 'ul' = bulleted list to begin parsing
+            - 'class' = attribute to search for
+            - 'a-unordered-list a-vertical a-spacing-none' = the name of the
+            list class
+            - 'li' = list item
+            - 'a-spacing-small' = the element we want to save
         """
-        try:
-            desc = self.soup.find('li', attrs = {'id': 'a-spacing-small'})
+        # empty list to store the product description in
+        desc_fmt = []
 
-            product_desc = desc.string
+        # iterate over first outer element of the listed items
+        for x in self.soup.find_all('ul', 
+            attrs={'class': 'a-unordered-list a-vertical a-spacing-none'}):
 
-            desc_fmt = product_desc.strip().replace(',', '') 
+            # iterate over the list itself
+            for tag in x.find_all('li', attrs={'class': 'a-spacing-small'}):
+                # store parsed list element
+                lst = tag.get_text()
+                # append the element to our list
+                desc_fmt.append(lst)
 
-        except AttributeError:
-            desc_fmt = "PRODUCT DESC NOT FOUND"
-
-        return desc_fmt
+        # replace commas with carriage returns
+        return "\n".join(desc_fmt)
 
     def get_price(self):
         """
@@ -228,5 +238,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 
