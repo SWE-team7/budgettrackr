@@ -17,6 +17,8 @@ import requests
 from jinja2 import Environment as j2_ENV
 # lib for loading our jira template file
 from jinja2 import FileSystemLoader as j2_FSL
+# regular expression lib
+import re
 
 
 class Product:
@@ -63,7 +65,6 @@ class Product:
                                       num_ratings=self.num_ratings)
         # print our formatted content
         print(content_fmt)
-        # print("Product: %s\nDetails: %s\nDescription: %s" % (self.name, self.details, self.desc))
 
     def get_name(self):
         """
@@ -89,32 +90,34 @@ class Product:
     def get_details(self):
         """
         function to retrieve details of an amazon product
-            - 'div' = the starting division to begin parsing
+            - 'table' = the starting division to begin parsing
             - 'id' = unique ID for an HTML element
             - 'productOverview_feature_div' = the HTML we want to save
-        the idea is to first iterate over the tag before our list in addition to 
+        the idea is to first iterate over the tag before our list in addition to
         the list itself
+
+        ISSUES:
+            - when parsing the HTML elements, sometimes the list is saved as 
+            empty. however, if I do a try/except AttributeError or an if/else
+            checking if the list is empty 
+
         """
+        # define our empty list to store the details in
         details_fmt = []
 
-        for x in self.soup.find_all('table', attrs={'class': 'a-normal a-spacing-none a-spacing-top-base'}):
-            for tag in x.find_all('tr'):
-                details_fmt = tag.get_text()
-
-        return details_fmt
-
-        """
-        try:
-            details = self.soup.find('div', attrs = {'id': 'productOverview_feature_div'})
-            product_details = details.string
-            details_fmt = product_details.strip().replace(',', '')   
-
-        except AttributeError:
-            details_fmt = "PRODUCT DETAILS NOT FOUND"
+        # iterate over the first outer element of our table 
+        for x in self.soup.find_all('table', 
+            attrs={'class': 'a-normal a-spacing-none a-spacing-top-base'}):
             
-        return details_fmt
-        """
+            # iterate over the tables cells
+            for tag in x.find_all('tr'):
+                # store the parsed bullet point
+                bullet = tag.get_text()
+                # append details list with saved bullet point
+                details_fmt.append(bullet)
 
+        # replace the commas in list with carriage returns
+        return "\n".join(details_fmt)
 
     def get_desc(self):
         """
