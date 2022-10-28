@@ -3,6 +3,7 @@
 Simple scraping with beautifulsoup + requests. Spoofing machine + browser 
 information is necessary in order to extract data from amazon and perhaps 
 other major companies.
+
 This file's purpose is to extract data from a given URL
 """
 
@@ -96,10 +97,12 @@ class Product:
             - 'a-normal a-spacing-none a-spacing-top-base' = the HTML we want 
             to save the idea is to first iterate over the tag before our list 
             in addition to the list itself
+
         ISSUES:
             - when parsing the HTML elements, sometimes the list is saved as 
             empty. however, if I do a try/except AttributeError or an if/else
             checking if the list is empty, empty brackets '[]' get printed 
+
         """
         # define our empty list to store the details in
         details_fmt = []
@@ -245,3 +248,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
