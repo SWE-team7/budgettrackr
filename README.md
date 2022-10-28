@@ -27,9 +27,11 @@ $ git clone git@github.com:SWE-team7/budgettrackr.git
 TODO
 
 # Built With
-> * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - Library for scraping web data
-> * [requests](https://pypi.org/project/requests/) - Library for handling HTTP requests
+> * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
+> * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
+> * [Python HTTP] (https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
+
 TODO
 
 # Running the Tests
