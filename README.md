@@ -30,7 +30,7 @@ TODO
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
 > * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
-> * [Python HTTP] (https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
+> * [Python HTTP](https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
 
 TODO
 
