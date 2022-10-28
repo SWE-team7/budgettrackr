@@ -4,4 +4,3 @@ Contributors:
 > * Kyler Conant 
 > * Brock Heinz
 > * Brandon Mack
-
