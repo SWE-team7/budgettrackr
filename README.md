@@ -26,7 +26,7 @@ $ git clone git@github.com:SWE-team7/budgettrackr.git
 ```
 TODO
 
-# Built With
+## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
 > * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
@@ -35,31 +35,32 @@ TODO
 
 TODO
 
-# Running the Tests
+## Running the Tests
 TODO
 
-# Deployment
+## Deployment
 TODO
 
-### Contributing
-Please refer to [CONTRIBUTING.md](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTING.md)
+# Contributing
+Please refer to [CONTRIBUTING.md](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTING.md) on how
+to conribute to this project. 
 
-### Versioning
+# Versioning
 We are using SemVer for our releases. Check out the [tags](https://github.com/SWE-team7/budgettrackr/tags) to see versions.
 
-### Authors
+# Authors
 Contributors:
-> * Akiel Aries - *Data Mining* - [akielaries](https://github.com/akielaries)
-> * Braedon Behnke - *TODO*- [B-Man420](https://github.com/B-Man420)
+> * Akiel Aries - *Data Mining, Integration* - [akielaries](https://github.com/akielaries)
+> * Braedon Behnke - *TODO* - [B-Man420](https://github.com/B-Man420)
 > * Kyler Conant - *TODO* - [kylerc150](https://github.com/kylerc150)
 > * Brock Heinz - *TODO* - [BrockHeinz](https://github.com/BrockHeinz)
 > * Brandon Mack - *TODO* - [infinity3arc3](https://github.com/infinity3arc3)
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTORS.md)
 
-### License
+# License
 Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/LICENSE) for details. 
 
-### Acknowledgements
+# Acknowledgements
 > * budgettrackr contributors
 > * Professor Marco Gerosa
