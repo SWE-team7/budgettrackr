@@ -30,7 +30,8 @@ TODO
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
 > * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
-> * [Python HTTP](https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
+> * [Python HTTP-Server](https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
+> * [Flask](https://flask.palletsprojects.com/en/2.2.x/) - Integrating Python with HTML elements
 
 TODO
 
@@ -57,7 +58,8 @@ Contributors:
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTORS.md)
 
 ### License
-TODO
+Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/LICENSE) for details. 
 
 ### Acknowledgements
-> * Professor Marco Gerosa.
+> * budgettrackr contributors
+> * Professor Marco Gerosa
