@@ -58,15 +58,16 @@ def main():
         - get_num_ratings()
         - print_contents() 
     """
+    # p = []
     p = Product(soup)
 
-    # run our website
-    w = Website()
+    # run our website passing in the Product class object
+    #wh = Website.home()
+    #wp = Website.product_page(p)
 
+    # run our flask app
     app.run(debug=True)
 
 if __name__ == '__main__':
     main()
-
-
 
