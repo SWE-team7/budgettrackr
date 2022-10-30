@@ -53,7 +53,7 @@ $ docker build -t budgettrackr-dckr .
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
 > * [Python HTTP-Server](https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
 > * [Flask](https://flask.palletsprojects.com/en/2.2.x/) - Integrating Python with HTML elements
-See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/sandbox/requirements.txt). 
+See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
 TODO
@@ -63,7 +63,7 @@ Budgettrackr is currently hosted on a Raspberry Pi 4 running Ubuntu LTS 22.04
 running in a Docker container. Our website is made with Flask 
 
 # Contributing
-Please refer to [CONTRIBUTING.md](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTING.md) on how
+Please refer to [CONTRIBUTING.md](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTING.md) on how
 to contribute to this project. 
 
 # Versioning
@@ -77,12 +77,11 @@ Contributors:
 > * Brock Heinz - *Documentation* - [BrockHeinz](https://github.com/BrockHeinz)
 > * Brandon Mack - *Front-End, SysAdmin* - [infinity3arc3](https://github.com/infinity3arc3)
 
-See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTORS.md)
+See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 
 # License
-Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/budgettrackr/blob/sandbox/LICENSE) for details. 
+Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/budgettrackr/blob/main/LICENSE) for details. 
 
 # Acknowledgements
 > * budgettrackr contributors
 > * Professor Marco Gerosa
-
