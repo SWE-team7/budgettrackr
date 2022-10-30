@@ -19,7 +19,7 @@ $ pip --version
 $ pip install -r requirements.txt
 ```
 For docker installation you can follow your own installation guide or the one 
-provided from [docker](https://docs.docker.com/engine/install/)(this is 
+provided from [docker](https://docs.docker.com/engine/install/) (this is 
 for ubuntu).
 
 Linux-based users:
@@ -53,6 +53,7 @@ $ docker build -t budgettrackr-dckr .
 > * [jinja2](https://pypi.org/project/Jinja2/) - formatting for console output
 > * [Python HTTP-Server](https://docs.python.org/3/library/http.server.html) - publishing HTML to localhost
 > * [Flask](https://flask.palletsprojects.com/en/2.2.x/) - Integrating Python with HTML elements
+
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
