@@ -2,8 +2,8 @@
 
 # budgettrackr
 Budgettrackr is an open source tool enabling online shoppers to make an educated purchase on a given 
-product by comparing listings accross multiple sources. Budgettrackr allows users to view prices, 
-decriptions, datils, ratings, and amount of ratings to determine where they should purchase a product. 
+product by comparing listings across multiple sources. Budgettrackr allows users to view prices, 
+descriptions, details, ratings, and amount of ratings to determine where they should purchase a product. 
 
 # Getting Started
 ## Prerequisites
@@ -64,7 +64,7 @@ running in a Docker container. Our website is made with Flask
 
 # Contributing
 Please refer to [CONTRIBUTING.md](https://github.com/SWE-team7/budgettrackr/blob/sandbox/CONTRIBUTING.md) on how
-to conribute to this project. 
+to contribute to this project. 
 
 # Versioning
 We are using SemVer for our releases. Check out the [tags](https://github.com/SWE-team7/budgettrackr/tags) to see versions.
