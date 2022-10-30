@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#/usr/bin/python3
 """
 Simple scraping with beautifulsoup + requests. Spoofing machine + browser 
 information is necessary in order to extract data from amazon and perhaps 
@@ -7,12 +7,6 @@ other major companies.
 This file's purpose is to extract data from a given URL
 """
 
-# lib for scraping + formatting retrieved data
-from bs4 import BeautifulSoup as bs
-# python binding for C libs libxml libxslt, handling html xml files
-import lxml
-# lib for HTTP requests
-import requests
 # lib for setting up the director for our jira template file
 from jinja2 import Environment as j2_ENV
 # lib for loading our jira template file
@@ -48,13 +42,13 @@ class Product:
         self.rating = self.get_rating()
         self.num_ratings = self.get_num_ratings()
         self.display = self.print_contents()
-    
+
     def print_contents(self):
         """
         takes care of formatting neatly with Jira + printing
         """
         # load the folder in which the template is located
-        env = j2_ENV(loader = j2_FSL(''))
+        env = j2_ENV(loader = j2_FSL('templates'))
         # load the .j2 template
         template = env.get_template('product.j2')
         # define our fields to be rendered based on the .j2 file
@@ -199,53 +193,4 @@ class Product:
             ratings_num = "NUMBER OF RATINGS NOT FOUND"
         
         return ratings_num
-
-def main():
-    """
-    specifying user agent, other user agents available online for something 
-    stable or server-based, think of a function to parse a list of user 
-    agents and swap on a time-based interval
-    """
-    user_agent = ({'User-Agent': 
-                    'Mozilla/5.0 (X11; Linux x86_64) \
-                    AppleWebKit/537.36 (KHTML, like Gecko) \
-                    Chrome/72.0.3626.121 Safari/537.36', \
-                    'Accept-Language': 'en-US, en;q=0.5'
-                   })
-
-    # source file
-    link = 'https://www.amazon.com/AMD-Ryzen-5600X-12-Thread-Processor/dp/B08166SLDF/ref=sr_1_1?crid=1B7QEPTT5XCBH&keywords=amd+ryzen+5000&qid=1665786908&qu=eyJxc2MiOiIzLjA1IiwicXNhIjoiMi44NCIsInFzcCI6IjIuMTUifQ%3D%3D&sprefix=amd%2520ryzen%25205000%2Caps%2C114&sr=8-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0'
-    
-    # HTTP request 
-    page = requests.get(link, headers = user_agent)
-
-    # soup object that stores our data
-    soup = bs(page.content, "lxml")
-    
-    """
-    call to our class which calls our constructor simultaneously calls the 
-    functions to fill in our product, passing in the soup object. within the 
-    construct we call the following functions:
-        - get_name()
-        - get_details() 
-        - get_desc()
-        - get_price()
-        - get_rating()
-        - get_num_ratings()
-        - print_contents() 
-    """
-    p = Product(soup)
-
-    name_place = Element('name')
-    name_place.write(p.name)
-    review_place = Element('reviews')
-    review_place.write(p.rating)
-    review_place.write(p.num_ratings)
-    desc_place = Element('description')
-    desc_place.write(p.desc)
-    price_place = Element('graphs')
-    price_place.write(p.price)
-
-if __name__ == '__main__':
-    main()
 

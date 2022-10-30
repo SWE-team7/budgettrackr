@@ -10,7 +10,6 @@ Ryzen 5 5600X
 <!--Load py-script plug-in-->
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
 </head>
 
 <style>
@@ -73,7 +72,7 @@ body {
    </div>
 
    <div class="image" id='image'>
-   <img src ="Ryzen.jpg" width="350px" height="300px">
+       <img src ="/static/Ryzen.jpg" width="350px" height="300px">
    </div>
 
    <div class="reviews" id='reviews'>
@@ -86,14 +85,14 @@ body {
    </div>
 
    <py-script>
-      name_place = Element('name')
-      name_place.write(f"Ryzen 5 5600X")
-      review_place = Element('reviews')
-      review_place.write(f" First reviews then number of review sources")
-      desc_place = Element('description')
-      desc_place.write(f" This is the product description")
-      price_place = Element('graphs')
-      price_place.write(f" This is where price information will go")
+       name_place = Element('name')
+       name_place.write(f"Ryzen 5 5600X")
+       review_place = Element('reviews')
+       review_place.write(f" First reviews then number of review sources")
+       desc_place = Element('description')
+       desc_place.write(f" This is the product description")
+       price_place = Element('graphs')
+       price_place.write(f" This is where price information will go")
    </py-script>
 
 </div>
