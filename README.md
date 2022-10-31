@@ -52,6 +52,9 @@ $ docker run -d -p 5000:5000 budgettrackr-dckr
 # list containers
 $ docker ps
 ```
+And the container is now ready to see at `localhost:5000/`
+
+Budgettrackr is currently deployed at http://192.129.136.171/
 
 ## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
@@ -63,11 +66,12 @@ $ docker ps
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
-
-TODO
+Currently our tests our minimal and implemented on pushes to our main branch. 
+Our tests check for current versions, dependency installations, code style, among other 
+minor things. Unit tests checking against our code more in depth are in current development.
 
 ## Deployment
-Budgettrackr is currently hosted on a Raspberry Pi 4 running Ubuntu LTS 22.04 
+Budgettrackr is currently hosted on a hostwinds server running Ubuntu SMP
 running in a Docker container. Our website is made with Flask 
 
 # Contributing
@@ -79,11 +83,11 @@ We are using SemVer for our releases. Check out the [tags](https://github.com/SW
 
 # Authors
 Contributors:
-> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration* - [akielaries](https://github.com/akielaries)
+> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment* - [akielaries](https://github.com/akielaries)
 > * Braedon Behnke - *Documentation, Planning* - [B-Man420](https://github.com/B-Man420)
 > * Kyler Conant - *Documentation, Testing* - [kylerc150](https://github.com/kylerc150)
-> * Brock Heinz - *Documentation* - [BrockHeinz](https://github.com/BrockHeinz)
-> * Brandon Mack - *Front-End, SysAdmin* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Brock Heinz - [BrockHeinz](https://github.com/BrockHeinz)
+> * Brandon Mack - *Front-End, Deployment, SysOps* - [infinity3arc3](https://github.com/infinity3arc3)
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 
