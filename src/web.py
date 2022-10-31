@@ -13,20 +13,12 @@ from main import *
 from flask.views import View
 
 
-<<<<<<< HEAD
-    @app.route('/ryzen_55600x/index.html', methods=['POST', 'GET'])
-    def product_page(p):
-        #TODO: Modify to allow for multiply possible products.
-        # return product page filling in the necessary elements
-        return render_template('ryzen_55600x/index.html', p.name=name)
-=======
 @app.route('/', methods=['GET'])
 def home_page():
     #print("<--------- DEBUG --------->")
     #print(p.name)
 
     return render_template('index.html')
->>>>>>> 5698cd7 (Trying to bridge independent python code with flask-based python methods)
 
 @app.route('/ryzen_55600x/<p_attrs>', methods=['POST', 'GET'])
 def product_page(p_attrs):
@@ -42,5 +34,5 @@ def product_page(p_attrs):
     return page
 
 # fun flask app
-app.run(debug=True)
-        
+app.run(host='0.0.0.0', threaded=False)
+

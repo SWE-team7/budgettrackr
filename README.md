@@ -7,6 +7,8 @@ descriptions, details, ratings, and amount of ratings to determine where they sh
 
 # Getting Started
 ## Prerequisites
+When running this project with Docker, dependencies other than the container
+application itself, will be taken care of. 
 For python dependencies: 
 ```
 # install pip (python pkg manager)
@@ -43,8 +45,12 @@ $ cd budgettrack
 
 # remove intermediate containers and assign name to container
 $ sudo docker build --rm -t budgettrackr-dckr .
-# run the application using the dockerfile
+# build the docker container using the dockerfile
 $ docker build -t budgettrackr-dckr .
+# run the image using the built container
+$ docker run -d -p 5000:5000 budgettrackr-dckr
+# list containers
+$ docker ps
 ```
 
 ## Built With
@@ -57,6 +63,7 @@ $ docker build -t budgettrackr-dckr .
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
+
 TODO
 
 ## Deployment
@@ -86,3 +93,4 @@ Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/bu
 # Acknowledgements
 > * budgettrackr contributors
 > * Professor Marco Gerosa
+
