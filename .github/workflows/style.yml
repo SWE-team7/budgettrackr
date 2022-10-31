@@ -1,5 +1,11 @@
-on: [push, pull_request]
 name: Python Linting
+
+on: 
+  push:
+    branches: [ main, sandbox ]
+  pull_request:
+    branches: [ main, sandbox ]
+
 jobs:
   PythonLinting:
     name: Python linting
@@ -9,11 +15,3 @@ jobs:
       - name: Konstruktoid Python linting
         uses: konstruktoid/action-pylint@master
 
-workflow "Python Linting" {
-  on = "push"
-  resolves = ["python-linting"]
-}
-
-action "python-linting" {
-  uses = "konstruktoid/action-pylint@master"
-}

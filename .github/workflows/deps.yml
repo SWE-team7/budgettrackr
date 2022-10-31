@@ -1,11 +1,11 @@
-- name: Setup Python
-  uses: actions/setup-python@v4.3.0
+name: Setup Python Dependencies
 
 steps:
-- uses: actions/checkout@v3
-- uses: actions/setup-python@v4
+  - uses: actions/checkout@v3
+  - uses: actions/setup-python@v4
+
   with:
-    python-version: ["3.7", "3.8", "3.9", "3.10"]
-    cache: 'pip' # cache pip deps
+    python-version: '3.x'
+    cache: 'pip' 
 - run: pip install -r requirements.txt
 
