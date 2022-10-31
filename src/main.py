@@ -5,7 +5,7 @@ declare a link to scrape and a corresponding BeautifulSoup object, and finally
 calling our scrape file to retrieve the 
 """
 # python binding for C libs libxml libxslt, handling html xml files
-import lxml
+#import lxml
 # lib for HTTP requests
 import requests
 # lib for scraping + formatting retrieved data

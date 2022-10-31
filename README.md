@@ -70,6 +70,12 @@ Currently our tests our minimal and implemented on pushes to our main branch.
 Our tests check for current versions, dependency installations, code style, among other 
 minor things. Unit tests checking against our code more in depth are in current development.
 
+### Unit Tests
+
+* Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
+To run the unit tests yourself, clone the repo and enter the repository's root directory, and
+run every test with `nosetests/tests`
+
 ## Deployment
 Budgettrackr is currently hosted on a hostwinds server running Ubuntu SMP
 running in a Docker container. Our website is made with Flask 
@@ -83,11 +89,11 @@ We are using SemVer for our releases. Check out the [tags](https://github.com/SW
 
 # Authors
 Contributors:
-> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment* - [akielaries](https://github.com/akielaries)
-> * Braedon Behnke - *Documentation, Planning* - [B-Man420](https://github.com/B-Man420)
-> * Kyler Conant - *Documentation, Testing* - [kylerc150](https://github.com/kylerc150)
+> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment, Deliverables* - [akielaries](https://github.com/akielaries)
+> * Braedon Behnke - *Documentation, Planning, Deliverables* - [B-Man420](https://github.com/B-Man420)
+> * Kyler Conant - *Documentation, Testing, Deliverables* - [kylerc150](https://github.com/kylerc150)
 > * Brock Heinz - [BrockHeinz](https://github.com/BrockHeinz)
-> * Brandon Mack - *Front-End, Deployment, SysOps* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Brandon Mack - *Front-End, Deployment, SysOps, Deliverables* - [infinity3arc3](https://github.com/infinity3arc3)
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 

@@ -1,0 +1,2 @@
+from tri import triangle
+
