@@ -68,7 +68,7 @@ body {
 
 <div class="grid-container">
 
-    <div class="name" id='name'>
+    <div class="name" id='{name}'>
    </div>
 
    <div class="image" id='image'>
@@ -86,7 +86,7 @@ body {
 
    <py-script>
        name_place = Element('name')
-       name_place.write(f"{{name}}")
+       name_place.write(f"Ryzen 5 5600X")
        review_place = Element('reviews')
        review_place.write(f" First reviews then number of review sources")
        desc_place = Element('description')

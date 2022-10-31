@@ -13,9 +13,9 @@ from jinja2 import Environment as j2_ENV
 from jinja2 import FileSystemLoader as j2_FSL
 # regular expression lib
 import re
+# from flask import Flask, render_template, request, session
 
-
-class Product:
+class Product(object):
     """
     product class that will provide easier use of inheritance for other classes
     relying off the data collected from this class. Product serves to gather 
@@ -43,7 +43,6 @@ class Product:
         self.num_ratings = self.get_num_ratings()
         self.display = self.print_contents()
 
-##Prints product details
     def print_contents(self):
         """
         takes care of formatting neatly with Jira + printing
@@ -62,7 +61,6 @@ class Product:
         # print our formatted content
         print(content_fmt)
 
-##Gets name of product
     def get_name(self):
         """
         Finds the name of the product by parsing the webpage. Inspect the 
@@ -85,7 +83,6 @@ class Product:
 
         return name_fmt
 
-##Details of product
     def get_details(self):
         """
         function to retrieve details of an amazon product
@@ -119,7 +116,6 @@ class Product:
         # replace the commas in list with carriage returns
         return "\n".join(details_fmt)
 
-##Gets description of product
     def get_desc(self):
         """
         function to retrieve the description from of amazon product
@@ -147,7 +143,6 @@ class Product:
         # replace commas with carriage returns
         return "\n".join(desc_fmt)
 
-##Gets the price of the searched product
     def get_price(self):
         """
         function to retrieve the price info of an amazon product
@@ -166,7 +161,6 @@ class Product:
         
         return price
         
-##Gets the rating on said product
     def get_rating(self):
         """
         function to retrieve the rating of an amazon product
@@ -185,7 +179,6 @@ class Product:
         
         return rating
 
-##Gets the ratings of product searched
     def get_num_ratings(self):
         """
         function to retrieve the number of ratings an amazon product has been 

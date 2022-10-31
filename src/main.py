@@ -15,7 +15,7 @@ from scrape import *
 # import our web file
 #from web import *
 # import Flask for web publishing
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 # declare our flask app with our static dir
 app = Flask(__name__, static_url_path='/static')
@@ -58,15 +58,19 @@ def main():
         - get_num_ratings()
         - print_contents() 
     """
-    # p = []
-    p = Product(soup)
+    p_attrs = []
+    p_attrs = Product(soup)
+    print("<------------ DEBUG ------------>")
+    print(p_attrs.name)
+    p_name = p_attrs.name
 
     # run our website passing in the Product class object
-    #wh = Website.home()
-    #wp = Website.product_page(p)
+    wh = home_page()
+    wp = product_page(p_attrs)
+    #w = Website(p_attrs)
 
     # run our flask app
-    app.run(debug=True)
+    #app.run(debug=True)
 
 if __name__ == '__main__':
     main()
