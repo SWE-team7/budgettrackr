@@ -54,7 +54,7 @@ $ docker ps
 ```
 And the container is now ready to see at `localhost:5000/`
 
-Budgettrackr is currently deployed at http://192.129.136.171/
+Budgettrackr is currently deployed at http://192.129.136.171:5000
 
 ## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
