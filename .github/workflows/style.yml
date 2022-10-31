@@ -8,3 +8,12 @@ jobs:
       - uses: actions/checkout@master
       - name: Konstruktoid Python linting
         uses: konstruktoid/action-pylint@master
+
+workflow "Python Linting" {
+  on = "push"
+  resolves = ["python-linting"]
+}
+
+action "python-linting" {
+  uses = "konstruktoid/action-pylint@master"
+}
