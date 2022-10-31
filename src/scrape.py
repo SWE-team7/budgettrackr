@@ -14,7 +14,7 @@ from jinja2 import FileSystemLoader as j2_FSL
 # regular expression lib
 import re
 
-
+#Product Class Definition
 class Product:
     """
     product class that will provide easier use of inheritance for other classes
@@ -28,7 +28,7 @@ class Product:
         - rating()
         - num_ratings()
     """
-
+    #Product Initialization
     def __init__(self, soup):
         """
         Product class constructor, each 'field' function of the class 
