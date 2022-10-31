@@ -23,7 +23,7 @@ class Website:
 
     @app.route('/ryzen_55600x/index.html', methods=['POST', 'GET'])
     def product_page(p):
-
+        #TODO: Modify to allow for multiply possible products.
         # return product page filling in the necessary elements
         return render_template('ryzen_55600x/index.html', p.name=name)
 

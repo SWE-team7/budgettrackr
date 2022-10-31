@@ -80,6 +80,7 @@ class Product:
             name_fmt = name.strip().replace(',', '')
 
         except AttributeError:
+            #Product name could not be found
             name_fmt = "PRODUCT NAME NOT FOUND"
 
         return name_fmt
@@ -160,6 +161,7 @@ class Product:
                                     .string.strip().replace(',', '')
         
         except AttributeError:
+            #Price attribute could not be found
             price = "PRICE NOT FOUND"
         
         return price
@@ -178,7 +180,8 @@ class Product:
                                     .string.strip().replace(',', '')
 
         except AttributeError:
-                rating = "RATING NOT FOUND"
+            #Rating attribute not found
+            rating = "RATING NOT FOUND"
         
         return rating
 
@@ -197,6 +200,7 @@ class Product:
                                         .string.strip().replace(',', '')
 
         except AttributeError:
+            #Ratings_num attribute not found
             ratings_num = "NUMBER OF RATINGS NOT FOUND"
         
         return ratings_num
