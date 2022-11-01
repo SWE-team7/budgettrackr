@@ -51,15 +51,16 @@ def main():
         - get_num_ratings()
         - print_contents()
     """
-    p_attrs = Product(user_agent, link)
+    #p_attrs = Product(user_agent, link)
 
     print("<------------ DEBUG ------------>")
-    print(p_attrs.name)
-    p_name = p_attrs.name
+    #print(p_attrs.name)
+    #p_name = p_attrs.name
 
     # run our website passing in the Product class object
-    wh = home_page()
-    wp = product_page(p_attrs)
+    #wh = home_page()
+    #wp = product_page()
+    w = Website()
 
 
 if __name__ == '__main__':
