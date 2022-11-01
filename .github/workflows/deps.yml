@@ -9,7 +9,7 @@ on:
 jobs:
   PythonDependcencies:
     name: Setup Python Dependencies
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
