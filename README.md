@@ -70,11 +70,15 @@ Currently our tests our minimal and implemented on pushes to our main branch.
 Our tests check for current versions, dependency installations, code style, among other 
 minor things. Unit tests checking against our code more in depth are in current development.
 
+> * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github)
+
 ### Unit Tests
 
 * Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
 To run the unit tests yourself, clone the repo and enter the repository's root directory, and
 run every test with `nosetests/tests`
+* All Python code is checked before pushed to a branch with autopep8.
+    * `autopep8 --in-place --aggressive --aggressive <filename>`
 
 ## Deployment
 Budgettrackr is currently hosted on a hostwinds server running Ubuntu SMP

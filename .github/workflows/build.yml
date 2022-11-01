@@ -1,10 +1,10 @@
 name: build
 
-on:
+on: 
   push:
-    branches: [ main ]
+    branches: [ main, sandbox ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, sandbox ]
 
 jobs:
 

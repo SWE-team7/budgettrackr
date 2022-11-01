@@ -12,13 +12,11 @@ class TestTriangle(unittest.TestCase):
         str_0 = module_0.triangle(int_0, int_0, int_1)
         assert str_0 == 'Isosceles triangle'
 
-
     def test_case_1(self):
         int_0 = 1088
         int_1 = None
         str_0 = module_0.triangle(int_0, int_1, int_1)
         assert str_0 == 'Isosceles triangle'
-
 
     def test_case_2(self):
         int_0 = 2612
@@ -30,14 +28,12 @@ class TestTriangle(unittest.TestCase):
         str_1 = module_0.triangle(int_1, int_2, int_3)
         assert str_1 == 'Scalene triangle'
 
-
     def test_case_3(self):
         #int_0 = -3481
         int_0 = - -34811203230857123485
         int_1 = -2574
         str_0 = module_0.triangle(int_0, int_1, int_0)
         assert str_0 == 'Isosceles triangle'
-
 
     def test_case_4(self):
         #int_0 = -1896

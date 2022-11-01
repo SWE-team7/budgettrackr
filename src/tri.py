@@ -5,4 +5,3 @@ def triangle(x: int, y: int, z: int) -> str:
         return "Isosceles triangle"
     else:
         return "Scalene triangle"
-
