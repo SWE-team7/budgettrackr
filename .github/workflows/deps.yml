@@ -6,12 +6,17 @@ on:
   pull_request:
     branches: [ main, sandbox ]
 
-steps:
-  - uses: actions/checkout@v3
-  - uses: actions/setup-python@v4
+jobs:
+  PythonDependcencies:
+    name: Setup Python Dependencies
+    runs-on: ubuntu-lates
 
-  with:
-    python-version: '3.x'
-    cache: 'pip' 
-- run: pip install -r requirements.txt
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+
+        with:
+          python-version: '3.x'
+          cache: 'pip' 
+          run: pip install -r requirements.txt
 
