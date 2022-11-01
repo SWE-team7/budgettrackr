@@ -66,11 +66,21 @@ Budgettrackr is currently deployed at http://192.129.136.171:5000
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
+
+### Repository Checks
 Currently our tests our minimal and implemented on pushes to our main branch. 
 Our tests check for current versions, dependency installations, code style, among other 
 minor things. Unit tests checking against our code more in depth are in current development.
 
-> * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github)
+The following actions are ran against the project upon every push or pull request made to the `main` or `sandbox` branches.
+> * [Proof HTML](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/proof-html.yml): confirms
+our HTML in the repo is valid.
+> * [Setup Python Dependencies](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/deps.yml): confirms the
+dependencies of our project work correctly.
+> * [Build](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/build.yml): Confirms our project builds by 
+running the Dockerfile of our project
+is working. 
+> * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github).
 
 ### Unit Tests
 
