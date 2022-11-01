@@ -13,6 +13,10 @@ from jinja2 import Environment as j2_ENV
 from jinja2 import FileSystemLoader as j2_FSL
 # regular expression lib
 import re
+# lib for HTTP requests
+import requests
+# lib for scraping + formatting retrieved data
+from bs4 import BeautifulSoup as bs
 # from flask import Flask, render_template, request, session
 
 
@@ -30,12 +34,15 @@ class Product(object):
         - num_ratings()
     """
 
-    def __init__(self, soup):
+    def __init__(self, user_agent, link):
         """
         Product class constructor, each 'field' function of the class
         is assigned to an attribute of the class
         """
-        self.soup = soup
+        # declare page object passing in the constructors parameters
+        self.page = requests.get(link, headers=user_agent)
+        # declare soup object passing in the conent of our page object
+        self.soup = bs(self.page.content, "lxml")
         self.name = self.get_name()
         self.details = self.get_details()
         self.desc = self.get_desc()

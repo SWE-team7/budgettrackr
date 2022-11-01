@@ -1,1 +1,2 @@
-from tri import triangle
+#from tri import *
+from scrape import *

@@ -5,9 +5,10 @@ declare a link to scrape and a corresponding BeautifulSoup object, and finally
 calling our scrape file to retrieve the
 """
 # python binding for C libs libxml libxslt, handling html xml files
-#import lxml
-# lib for HTTP requests
+import lxml
+# import the py file taking care of routing collected data
 from web import *
+# lib for HTTP requests
 import requests
 # lib for scraping + formatting retrieved data
 from bs4 import BeautifulSoup as bs
@@ -18,8 +19,6 @@ from flask import Flask, render_template, request, session
 
 # declare our flask app with our static dir
 app = Flask(__name__, static_url_path='/static')
-
-# import our web file with our flask app specifications
 
 
 def main():
@@ -38,15 +37,12 @@ def main():
     link = 'https://www.amazon.com/AMD-Ryzen-5600X-12-Thread-Processor/dp/B08166SLDF/ref=sr_1_1?             crid=1B7QEPTT5XCBH&keywords=amd+ryzen+                                                                       5000&qid=1665786908&qu=eyJxc2MiOiIzLjA1IiwicXNhIjoiMi44NCIsInFzcCI6IjIuMTUifQ%3D%3D&sprefix=amd%2520ryzen%25205000%2Caps%2C114&sr=8-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0'
 
     # HTTP request
-    page = requests.get(link, headers=user_agent)
-
-    # soup object that stores our data
-    soup = bs(page.content, "lxml")
+    #page = requests.get(link, headers=user_agent)
 
     """
-    call to our class which calls our constructor simultaneously calls the
-    functions to fill in our product, passing in the soup object. within the
-    construct we call the following functions:
+    call to our class which calls our constructor simultaneously. All calls to
+    our class methods are done within the constructor. For this we only need
+    to pass in a user_agent + link object. The functions within our Product class are:
         - get_name()
         - get_details()
         - get_desc()
@@ -55,8 +51,8 @@ def main():
         - get_num_ratings()
         - print_contents()
     """
-    p_attrs = []
-    p_attrs = Product(soup)
+    p_attrs = Product(user_agent, link)
+
     print("<------------ DEBUG ------------>")
     print(p_attrs.name)
     p_name = p_attrs.name
