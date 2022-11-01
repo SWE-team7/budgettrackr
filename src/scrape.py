@@ -1,7 +1,7 @@
-#/usr/bin/python3
+# /usr/bin/python3
 """
-Simple scraping with beautifulsoup + requests. Spoofing machine + browser 
-information is necessary in order to extract data from amazon and perhaps 
+Simple scraping with beautifulsoup + requests. Spoofing machine + browser
+information is necessary in order to extract data from amazon and perhaps
 other major companies.
 
 This file's purpose is to extract data from a given URL
@@ -13,13 +13,18 @@ from jinja2 import Environment as j2_ENV
 from jinja2 import FileSystemLoader as j2_FSL
 # regular expression lib
 import re
+# lib for HTTP requests
+import requests
+# lib for scraping + formatting retrieved data
+from bs4 import BeautifulSoup as bs
 # from flask import Flask, render_template, request, session
+
 
 class Product(object):
     """
     product class that will provide easier use of inheritance for other classes
-    relying off the data collected from this class. Product serves to gather 
-    the attribute of a given product. 
+    relying off the data collected from this class. Product serves to gather
+    the attribute of a given product.
     Functions:
         - name()
         - details()
@@ -29,12 +34,15 @@ class Product(object):
         - num_ratings()
     """
 
-    def __init__(self, soup):
+    def __init__(self, user_agent, link):
         """
-        Product class constructor, each 'field' function of the class 
+        Product class constructor, each 'field' function of the class
         is assigned to an attribute of the class
         """
-        self.soup = soup
+        # declare page object passing in the constructors parameters
+        self.page = requests.get(link, headers=user_agent)
+        # declare soup object passing in the conent of our page object
+        self.soup = bs(self.page.content, "lxml")
         self.name = self.get_name()
         self.details = self.get_details()
         self.desc = self.get_desc()
@@ -48,22 +56,22 @@ class Product(object):
         takes care of formatting neatly with Jira + printing
         """
         # load the folder in which the template is located
-        env = j2_ENV(loader = j2_FSL('templates'))
+        env = j2_ENV(loader=j2_FSL('templates'))
         # load the .j2 template
         template = env.get_template('product.j2')
         # define our fields to be rendered based on the .j2 file
-        content_fmt = template.render(name=self.name, 
-                                      details=self.details, 
-                                      desc=self.desc, 
-                                      price=self.price, 
-                                      rating=self.rating, 
+        content_fmt = template.render(name=self.name,
+                                      details=self.details,
+                                      desc=self.desc,
+                                      price=self.price,
+                                      rating=self.rating,
                                       num_ratings=self.num_ratings)
         # print our formatted content
         print(content_fmt)
 
     def get_name(self):
         """
-        Finds the name of the product by parsing the webpage. Inspect the 
+        Finds the name of the product by parsing the webpage. Inspect the
         desired webpage and the value to save
             - 'span' = the starting inline container
             - 'id' = unique ID for an HTML element
@@ -71,14 +79,14 @@ class Product(object):
         """
         try:
             # outer span inline container tag as starting parse point
-            product = self.soup.find('span', attrs = {'id': 'productTitle'})
+            product = self.soup.find('span', attrs={'id': 'productTitle'})
             # convert product to a string
             name = product.string
-            #formatting, neglecting commas and whitespace
+            # formatting, neglecting commas and whitespace
             name_fmt = name.strip().replace(',', '')
 
         except AttributeError:
-            #Product name could not be found
+            # Product name could not be found
             name_fmt = "PRODUCT NAME NOT FOUND"
 
         return name_fmt
@@ -89,23 +97,24 @@ class Product(object):
             - 'table' = the starting division to begin parsing
             - 'class' = attribute we want to search for
             - 'tr' = unique ID for the element we want to save
-            - 'a-normal a-spacing-none a-spacing-top-base' = the HTML we want 
-            to save the idea is to first iterate over the tag before our list 
+            - 'a-normal a-spacing-none a-spacing-top-base' = the HTML we want
+            to save the idea is to first iterate over the tag before our list
             in addition to the list itself
 
         ISSUES:
-            - when parsing the HTML elements, sometimes the list is saved as 
+            - when parsing the HTML elements, sometimes the list is saved as
             empty. however, if I do a try/except AttributeError or an if/else
-            checking if the list is empty, empty brackets '[]' get printed 
+            checking if the list is empty, empty brackets '[]' get printed
 
         """
         # define our empty list to store the details in
         details_fmt = []
 
-        # iterate over the first outer element of our table 
-        for x in self.soup.find_all('table', 
-            attrs={'class': 'a-normal a-spacing-none a-spacing-top-base'}):
-            
+        # iterate over the first outer element of our table
+        for x in self.soup.find_all(
+            'table', attrs={
+                'class': 'a-normal a-spacing-none a-spacing-top-base'}):
+
             # iterate over the tables cells
             for tag in x.find_all('tr'):
                 # store the parsed bullet point
@@ -130,8 +139,9 @@ class Product(object):
         desc_fmt = []
 
         # iterate over first outer element of the listed items
-        for x in self.soup.find_all('ul', 
-            attrs={'class': 'a-unordered-list a-vertical a-spacing-none'}):
+        for x in self.soup.find_all(
+            'ul', attrs={
+                'class': 'a-unordered-list a-vertical a-spacing-none'}):
 
             # iterate over the list itself
             for tag in x.find_all('li', attrs={'class': 'a-spacing-small'}):
@@ -151,16 +161,16 @@ class Product(object):
             - 'a-offscreen' = the HTML we want to save
         """
         try:
-            price = self.soup.find('span', 
-                                    attrs = {'class': 'a-offscreen'})\
-                                    .string.strip().replace(',', '')
-        
+            price = self.soup.find('span',
+                                   attrs={'class': 'a-offscreen'})\
+                .string.strip().replace(',', '')
+
         except AttributeError:
-            #Price attribute could not be found
+            # Price attribute could not be found
             price = "PRICE NOT FOUND"
-        
+
         return price
-        
+
     def get_rating(self):
         """
         function to retrieve the rating of an amazon product
@@ -169,32 +179,32 @@ class Product(object):
             - 'a-icon-alt' = element to save
         """
         try:
-            rating = self.soup.find("span", 
-                                    attrs = {'class': 'a-icon-alt'})\
-                                    .string.strip().replace(',', '')
+            rating = self.soup.find("span",
+                                    attrs={'class': 'a-icon-alt'})\
+                .string.strip().replace(',', '')
 
         except AttributeError:
-            #Rating attribute not found
+            # Rating attribute not found
             rating = "RATING NOT FOUND"
-        
+
         return rating
 
     def get_num_ratings(self):
         """
-        function to retrieve the number of ratings an amazon product has been 
+        function to retrieve the number of ratings an amazon product has been
         given
             - 'span' = the starting inline container
             - 'id' = unique ID for an HTML element
             - 'acrCustomerReviewText' = the HTML we want to save
         """
         try:
-            ratings_num = self.soup.find('span', attrs = {'id': \
-                                        'acrCustomerReviewText'})\
-                                        .string.strip().replace(',', '')
+            ratings_num = self.soup.find(
+                'span', attrs={
+                    'id': 'acrCustomerReviewText'}) .string.strip().replace(
+                ',', '')
 
         except AttributeError:
-            #Ratings_num attribute not found
+            # Ratings_num attribute not found
             ratings_num = "NUMBER OF RATINGS NOT FOUND"
-        
-        return ratings_num
 
+        return ratings_num

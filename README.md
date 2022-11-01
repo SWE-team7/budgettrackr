@@ -54,7 +54,7 @@ $ docker ps
 ```
 And the container is now ready to see at `localhost:5000/`
 
-Budgettrackr is currently deployed at http://192.129.136.171/
+Budgettrackr is currently deployed at http://192.129.136.171:5000
 
 ## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
@@ -66,9 +66,29 @@ Budgettrackr is currently deployed at http://192.129.136.171/
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
+
+### Repository Checks
 Currently our tests our minimal and implemented on pushes to our main branch. 
 Our tests check for current versions, dependency installations, code style, among other 
 minor things. Unit tests checking against our code more in depth are in current development.
+
+The following actions are ran against the project upon every push or pull request made to the `main` or `sandbox` branches.
+> * [Proof HTML](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/proof-html.yml): confirms
+our HTML in the repo is valid.
+> * [Setup Python Dependencies](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/deps.yml): confirms the
+dependencies of our project work correctly.
+> * [Build](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/build.yml): Confirms our project builds by 
+running the Dockerfile of our project
+is working. 
+> * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github).
+
+### Unit Tests
+
+* Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
+To run the unit tests yourself, clone the repo and enter the repository's root directory, and
+run every test with `nosetests/tests`
+* All Python code is checked before pushed to a branch with autopep8.
+    * `autopep8 --in-place --aggressive --aggressive <filename>`
 
 ## Deployment
 Budgettrackr is currently hosted on a hostwinds server running Ubuntu SMP
@@ -83,11 +103,11 @@ We are using SemVer for our releases. Check out the [tags](https://github.com/SW
 
 # Authors
 Contributors:
-> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment* - [akielaries](https://github.com/akielaries)
-> * Braedon Behnke - *Documentation, Planning* - [B-Man420](https://github.com/B-Man420)
-> * Kyler Conant - *Documentation, Testing* - [kylerc150](https://github.com/kylerc150)
+> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment, Deliverables* - [akielaries](https://github.com/akielaries)
+> * Braedon Behnke - *Documentation, Planning, Deliverables* - [B-Man420](https://github.com/B-Man420)
+> * Kyler Conant - *Documentation, Testing, Deliverables* - [kylerc150](https://github.com/kylerc150)
 > * Brock Heinz - [BrockHeinz](https://github.com/BrockHeinz)
-> * Brandon Mack - *Front-End, Deployment, SysOps* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Brandon Mack - *Front-End, Deployment, SysOps, Deliverables* - [infinity3arc3](https://github.com/infinity3arc3)
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 
