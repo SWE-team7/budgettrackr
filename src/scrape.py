@@ -1,4 +1,4 @@
-# /usr/bin/python3
+#!/usr/bin/python3
 """
 Simple scraping with beautifulsoup + requests. Spoofing machine + browser
 information is necessary in order to extract data from amazon and perhaps
