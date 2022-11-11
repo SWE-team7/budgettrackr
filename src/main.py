@@ -1,4 +1,4 @@
-# /usr/bin/python3
+#!/usr/bin/python3
 """
 This file serves as 'MAIN' for budgettrackr. Here we will spoof our machine,
 declare a link to scrape and a corresponding BeautifulSoup object, and finally
