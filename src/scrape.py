@@ -17,7 +17,6 @@ import re
 import requests
 # lib for scraping + formatting retrieved data
 from bs4 import BeautifulSoup as bs
-# from flask import Flask, render_template, request, session
 
 
 class Product(object):

@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-This file serves as 'MAIN' for budgettrackr. Here we will spoof our machine,
-declare a link to scrape and a corresponding BeautifulSoup object, and finally
-calling our scrape file to retrieve the
+This file serves as 'MAIN' for budgettrackr where we import our necessary
+libraries, define a Flask application, and call our Website class to run
+the project.
 """
 # python binding for C libs libxml libxslt, handling html xml files
 import lxml
@@ -17,50 +17,16 @@ from scrape import *
 # import Flask for web publishing
 from flask import Flask, render_template, request, session
 
-# declare our flask app with our static dir
+# declare our flask app with our static directory
 app = Flask(__name__, static_url_path='/static')
 
 
 def main():
     """
-    specifying user agent, other user agents available online for something
-    stable or server-based, think of a function to parse a list of user
-    agents and swap on a time-based interval
+    run our Website class, within it renders templates and stores the
+    collected values from the Product class in our specified HTML elements
     """
-    user_agent = ({'User-Agent':
-                   'Mozilla/5.0 (X11; Linux x86_64) \
-                    AppleWebKit/537.36 (KHTML, like Gecko) \
-                    Chrome/72.0.3626.121 Safari/537.36',
-                   'Accept-Language': 'en-US, en;q=0.5'
-                   })
-    # source file
-    link = 'https://www.amazon.com/AMD-Ryzen-5600X-12-Thread-Processor/dp/B08166SLDF/ref=sr_1_1?             crid=1B7QEPTT5XCBH&keywords=amd+ryzen+                                                                       5000&qid=1665786908&qu=eyJxc2MiOiIzLjA1IiwicXNhIjoiMi44NCIsInFzcCI6IjIuMTUifQ%3D%3D&sprefix=amd%2520ryzen%25205000%2Caps%2C114&sr=8-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0'
-
-    # HTTP request
-    #page = requests.get(link, headers=user_agent)
-
-    """
-    call to our class which calls our constructor simultaneously. All calls to
-    our class methods are done within the constructor. For this we only need
-    to pass in a user_agent + link object. The functions within our Product class are:
-        - get_name()
-        - get_details()
-        - get_desc()
-        - get_price()
-        - get_rating()
-        - get_num_ratings()
-        - print_contents()
-    """
-    #p_attrs = Product(user_agent, link)
-
-    print("<------------ DEBUG ------------>")
-    #print(p_attrs.name)
-    #p_name = p_attrs.name
-
-    # run our website passing in the Product class object
-    #wh = home_page()
-    #wp = product_page()
-    w = Website()
+    render_web = Website()
 
 
 if __name__ == '__main__':
