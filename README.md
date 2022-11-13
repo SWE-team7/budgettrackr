@@ -1,3 +1,7 @@
+![html](https://github.com/SWE-team7/budgettrackr/actions/workflows/proof-html.yml/badge.svg)
+![deps](https://github.com/SWE-team7/budgettrackr/actions/workflows/deps.yml/badge.svg)
+![Build](https://github.com/SWE-team7/budgettrackr/actions/workflows/build.yml/badge.svg)
+
 # CS386 Group Project (Group 7)
 
 # budgettrackr
