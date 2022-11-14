@@ -1,0 +1,41 @@
+#1. Description
+
+Our system involves having a user search up a product on our website. This will include the prompt's name, details, description, price, rating, and number of ratings. This is very much fundamental in our design to give a good product visual. This will also be accompanied by graphs in the future to show other websites prices on the same product.
+
+This product involves using HTML and pyScript in our web design. This will include BeautifulSoup to scrape information off of websites to get the information needed after the product is searched. 
+
+
+#2. Architecture
+
+Budgettrackr consists of only 3 components, a data layer that includes our data scraping functionality, a presentation layer displaying the collected data to our website or the CLI, and a business layer taking care of containerization and acting as a bridge between the two components. 
+
+![](https://github.com/SWE-team7/budgettrackr/blob/D5.-Design/imgs/UML%20Diagram.png)
+
+#3. Class diagram
+
+![](https://github.com/SWE-team7/budgettrackr/blob/D5.-Design/imgs/Class%20Diagram.png)
+
+#4. Sequence diagram
+
+![](https://github.com/SWE-team7/budgettrackr/blob/D5.-Design/imgs/Sequence%20Diagram.png)
+
+#5. Design Patterns
+
+![](https://github.com/SWE-team7/budgettrackr/blob/D5.-Design/imgs/Design%20Pattern%201.png)
+
+Product: https://github.com/SWE-team7/budgettrackr/blob/main/src/scrape.py 
+Website: https://github.com/SWE-team7/budgettrackr/blob/main/src/web.py 
+Main: https://github.com/SWE-team7/budgettrackr/blob/main/src/main.py 
+
+
+![](https://github.com/SWE-team7/budgettrackr/blob/D5.-Design/imgs/Design%20Pattern%202.png)
+
+Template: https://github.com/SWE-team7/budgettrackr/blob/main/src/templates/ryzen_55600x/index.html 
+Product: https://github.com/SWE-team7/budgettrackr/blob/main/src/scrape.py 
+Main: https://github.com/SWE-team7/budgettrackr/blob/main/src/main.py
+
+
+#6. Design Principles
+
+We follow the single responsibility principle by making sure our classes serve singular purposes. For instance, in scrape.py, we have the class Product, which is designed only to house product related details and information gathering functions to fill itself in when called and nothing more.
+
