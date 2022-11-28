@@ -90,7 +90,7 @@ is working.
 
 * Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
 To run the unit tests yourself, clone the repo and enter the repository's root directory, and
-run every test with `nosetests/tests`
+run every test with `python -m unittest tests/`
 * All Python code is checked before pushed to a branch with autopep8.
     * `autopep8 --in-place --aggressive --aggressive <filename>`
 

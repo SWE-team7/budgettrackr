@@ -1,2 +1,2 @@
 #from tri import *
-from scrape import *
+#from scrape import Product
