@@ -69,7 +69,8 @@ $ docker ps
 $ docker rm -f <container_hash>
 # find image hash
 $ docker images
-# remove the image rm -f <image_hash>
+# remove the image 
+$ docker image rm -f <image_hash>
 ```
 
 ## Built With
