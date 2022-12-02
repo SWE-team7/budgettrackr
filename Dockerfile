@@ -19,9 +19,9 @@ RUN pip install -r requirements.txt
 # copy remaining contents of repo for container
 COPY . /app
 
-# declare entry point
-ENTRYPOINT ["python3"]
+# run the app's tests
+CMD python3 -m unittest tests/test_scrape.py
 
-# run our app
-CMD ["src/main.py"]
+# run the app
+CMD python3 src/main.py
 

@@ -61,6 +61,17 @@ And the container is now ready to see at `localhost:5000/`
 
 Budgettrackr is currently deployed at http://192.129.136.171:5000
 
+To remove the built container + images run:
+```
+# find the hash of the docker container
+$ docker ps
+# remove container
+$ docker rm -f <container_hash>
+# find image hash
+$ docker images
+# remove the image rm -f <image_hash>
+```
+
 ## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
 > * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
@@ -88,7 +99,6 @@ is working.
 > * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github).
 
 ### Unit Tests
-
 * Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
 To run the unit tests yourself, clone the repo and enter the repository's root directory, and
 run every test with `python -m unittest tests/`
