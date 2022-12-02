@@ -1,4 +1,4 @@
-name: Run Unit Tests
+name: Unit Tests
 
 on: 
   push:
@@ -30,7 +30,4 @@ jobs:
         uses: onichandame/python-test-action@master
         with:
           deps_list: 'requirements.txt'
-        run: |
-          pip install -r requirements.txt
-          python3 -m unittest tests/test_scrape.py
 
