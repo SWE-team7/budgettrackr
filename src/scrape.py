@@ -48,7 +48,7 @@ class Product(object):
         self.price = self.get_price()
         self.rating = self.get_rating()
         self.num_ratings = self.get_num_ratings()
-        self.display = self.print_contents()
+        # self.display = self.print_contents()
 
     def print_contents(self):
         """

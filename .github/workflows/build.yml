@@ -1,4 +1,4 @@
-name: Build budgettrackr
+name: Test + Build budgettrackr
 
 on: 
   push:

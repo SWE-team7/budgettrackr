@@ -1,6 +1,6 @@
 ![html](https://github.com/SWE-team7/budgettrackr/actions/workflows/valid-html.yml/badge.svg)
 ![deps](https://github.com/SWE-team7/budgettrackr/actions/workflows/deps.yml/badge.svg)
-![Build](https://github.com/SWE-team7/budgettrackr/actions/workflows/build.yml/badge.svg)
+![build](https://github.com/SWE-team7/budgettrackr/actions/workflows/build.yml/badge.svg)
 
 # CS386 Group Project (Group 7)
 
@@ -60,6 +60,18 @@ And the container is now ready to see at `localhost:5000/`
 
 Budgettrackr is currently deployed at http://192.129.136.171:5000
 
+To remove the built container + images run:
+```
+# find the hash of the docker container
+$ docker ps
+# remove container
+$ docker rm -f <container_hash>
+# find image hash
+$ docker images
+# remove the image 
+$ docker image rm -f <image_hash>
+```
+
 ## Built With
 > * [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - library for scraping web data
 > * [requests](https://pypi.org/project/requests/) - library for handling HTTP requests
@@ -87,10 +99,9 @@ is working.
 > * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github).
 
 ### Unit Tests
-
 * Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
 To run the unit tests yourself, clone the repo and enter the repository's root directory, and
-run every test with `nosetests/tests`
+run every test with `python -m unittest tests/`
 * All Python code is checked before pushed to a branch with autopep8.
     * `autopep8 --in-place --aggressive --aggressive <filename>`
 
