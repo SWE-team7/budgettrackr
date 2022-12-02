@@ -1,7 +1,6 @@
 ![html](https://github.com/SWE-team7/budgettrackr/actions/workflows/valid-html.yml/badge.svg)
 ![deps](https://github.com/SWE-team7/budgettrackr/actions/workflows/deps.yml/badge.svg)
 ![build](https://github.com/SWE-team7/budgettrackr/actions/workflows/build.yml/badge.svg)
-![test](https://github.com/SWE-team7/budgettrackr/actions/workflows/unittest.yml/badge.svg)
 
 # CS386 Group Project (Group 7)
 
