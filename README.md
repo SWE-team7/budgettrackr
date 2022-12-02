@@ -112,6 +112,7 @@ Contributors:
 > * Kyler Conant - *Documentation, Testing, Deliverables* - [kylerc150](https://github.com/kylerc150)
 > * Brock Heinz - [BrockHeinz](https://github.com/BrockHeinz)
 > * Brandon Mack - *Front-End, Deployment, SysOps, Deliverables* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Jake Fischer - *Graphic Design Outsource*
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 
