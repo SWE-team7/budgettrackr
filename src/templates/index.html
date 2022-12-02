@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+<!--Load py-script plug-in-->
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
 
 <style>
+@font-face {
+   font-family: Isocteur;
+   src: url(isocteur.ttf);
+}
+
 body {
-   background-color: #6d4b73;
-   color: #e4f786;
+   color: white;
+   background-color: black;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: Arial;
+}
+
+a {
+   color: white;
+}
+
+.grid-container {
    display: grid;
-   grid-template-rows: 1fr 100px auto;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 100px 1fr 1fr 50px 1fr 1fr 1fr 1fr;
+   width: 100vw;
+   height: 100vh;
 }
 
-h1 {
+.header {
+   z-index: 10;
+   background-color: #1F0047;
+   color: #1F0047;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   grid-row: 1;
+}
+.detail-area {
+   z-index: 10;
+   color: black;
+   background-color: black;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 9;
    justify-self: center;
-   font-family: verdana;
-   font-size: 500%;
+   align-self: center;
 }
-
-img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 8px;
+.title {
+   z-index: 20;
+   letter-spacing: -4px;
+   margin: 50px;
+   font-family: Isocteur;
+   font-style: italic;
+   align-self: center;
+   font-size: 250%;
+   grid-column: 1;
+   grid-row: 1;
 }
-
 </style>
 
 <body>
+<div class="grid-container">
+   <div class="header">header</div>
 
-<h1>Budget Trackr</h1>
+   <div class="detail-area">details</div>
 
-<p style="justify-self:center;align-self:start;">The free to use tool to keep track of price changes across the web.</p>
+   <div class="title"><a href="index.html">BudgeTrackr</a></div>
 
-<p style="justify-self:center;align-self:start;">Currently only one product is available for testing, linked below with an image. This list will be expanded in the future as the tool is developed.</p>
+   <py-script>
+   </py-script>
 
-<a href="ryzen_55600x/index.html">
-<img src="/static/Ryzen.jpg" width="650px" height="500px">
-</a>
-
+</div>
 </body>
 </html>
