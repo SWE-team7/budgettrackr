@@ -204,9 +204,14 @@ a {
 
    <div class="storefront" id="storefront"></div>
 
-   <py-script>
+   <py-script src="/.SeleniumBot.py">
+
+       inputFile = open("Input.txt").readline()
+
+       productName, productPrice, productDesc = main(inputFile)
+
        name_place = Element('name')
-       name_place.write(f"{{Name}}")
+       name_place.write(f"{{productName}}")
 
        review_place = Element('reviews')
        review_place.write(f"Number of reviews: {{reviews}}")
@@ -215,10 +220,10 @@ a {
        rating_place.write(f"Rating: {{ratings}}")
 
        desc_place = Element('description')
-       desc_place.write(f"Description: {{description}}")
+       desc_place.write(f"Description: {{productDesc}}")
 
        price_place = Element('price')
-       price_place.write(f"${{price}}")
+       price_place.write(f"${{productPrice}}")
 
        store = Element('storefront')
        link = "http://www.amazon.com"

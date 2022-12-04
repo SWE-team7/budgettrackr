@@ -68,6 +68,20 @@ a {
 </style>
 
 <body>
+
+<script>
+   function writeToText(){
+      const fs = require('fs')
+      var userInput = document.getElementById("botInput").value;
+
+
+      var blob = new Blob([userInput], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, "Input.txt");
+
+      window.open(/Product/index.html, "_top");
+   }
+</script>
+
 <div class="grid-container">
    <div class="header">header</div>
 
@@ -75,8 +89,11 @@ a {
 
    <div class="title"><a href="index.html">BudgeTrackr</a></div>
 
-   <py-script>
-   </py-script>
+   <input type="text" id="botInput" name="fname"><br>
+
+   <input type="button" id="buttonInput" value="Click here to Search" onClick="writeToText"><br>
+
+
 
 </div>
 </body>
