@@ -1,3 +1,7 @@
+![html](https://github.com/SWE-team7/budgettrackr/actions/workflows/valid-html.yml/badge.svg)
+![deps](https://github.com/SWE-team7/budgettrackr/actions/workflows/deps.yml/badge.svg)
+![build](https://github.com/SWE-team7/budgettrackr/actions/workflows/build.yml/badge.svg)
+
 # CS386 Group Project (Group 7)
 
 # budgettrackr
@@ -7,6 +11,8 @@ descriptions, details, ratings, and amount of ratings to determine where they sh
 
 # Getting Started
 ## Prerequisites
+When running this project with Docker, dependencies other than the container
+application itself, will be taken care of. 
 For python dependencies: 
 ```
 # install pip (python pkg manager)
@@ -43,8 +49,27 @@ $ cd budgettrack
 
 # remove intermediate containers and assign name to container
 $ sudo docker build --rm -t budgettrackr-dckr .
-# run the application using the dockerfile
+# build the docker container using the dockerfile
 $ docker build -t budgettrackr-dckr .
+# run the image using the built container
+$ docker run -d -p 5000:5000 budgettrackr-dckr
+# list containers
+$ docker ps
+```
+And the container is now ready to see at `localhost:5000/`
+
+Budgettrackr is currently deployed at http://192.129.136.171:5000
+
+To remove the built container + images run:
+```
+# find the hash of the docker container
+$ docker ps
+# remove container
+$ docker rm -f <container_hash>
+# find image hash
+$ docker images
+# remove the image 
+$ docker image rm -f <image_hash>
 ```
 
 ## Built With
@@ -57,10 +82,31 @@ $ docker build -t budgettrackr-dckr .
 See [requirements.txt](https://github.com/SWE-team7/budgettrackr/blob/main/requirements.txt). 
 
 ## Running the Tests
-TODO
+
+### Repository Checks
+Currently our tests our minimal and implemented on pushes to our main branch. 
+Our tests check for current versions, dependency installations, code style, among other 
+minor things. Unit tests checking against our code more in depth are in current development.
+
+The following actions are ran against the project upon every push or pull request made to the `main` or `sandbox` branches.
+> * [Proof HTML](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/proof-html.yml): confirms
+our HTML in the repo is valid.
+> * [Setup Python Dependencies](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/deps.yml): confirms the
+dependencies of our project work correctly.
+> * [Build](https://github.com/SWE-team7/budgettrackr/blob/sandbox/.github/workflows/build.yml): Confirms our project builds by 
+running the Dockerfile of our project
+is working. 
+> * See the workflow actions in place [here](https://github.com/SWE-team7/budgettrackr/tree/sandbox/.github).
+
+### Unit Tests
+* Our unit tests are ran automatically when changes are made to the budgettrackr repository. 
+To run the unit tests yourself, clone the repo and enter the repository's root directory, and
+run every test with `python -m unittest tests/`
+* All Python code is checked before pushed to a branch with autopep8.
+    * `autopep8 --in-place --aggressive --aggressive <filename>`
 
 ## Deployment
-Budgettrackr is currently hosted on a Raspberry Pi 4 running Ubuntu LTS 22.04 
+Budgettrackr is currently hosted on a hostwinds server running Ubuntu SMP
 running in a Docker container. Our website is made with Flask 
 
 # Contributing
@@ -72,11 +118,12 @@ We are using SemVer for our releases. Check out the [tags](https://github.com/SW
 
 # Authors
 Contributors:
-> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration* - [akielaries](https://github.com/akielaries)
-> * Braedon Behnke - *Documentation, Planning* - [B-Man420](https://github.com/B-Man420)
-> * Kyler Conant - *Documentation, Testing* - [kylerc150](https://github.com/kylerc150)
-> * Brock Heinz - *Documentation* - [BrockHeinz](https://github.com/BrockHeinz)
-> * Brandon Mack - *Front-End, SysAdmin* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Akiel Aries - *Data Mining, Back-End, Documentation, Integration, Deployment, Deliverables* - [akielaries](https://github.com/akielaries)
+> * Braedon Behnke - *Documentation, Planning, Deliverables* - [B-Man420](https://github.com/B-Man420)
+> * Kyler Conant - *Documentation, Testing, Deliverables* - [kylerc150](https://github.com/kylerc150)
+> * Brock Heinz - [BrockHeinz](https://github.com/BrockHeinz)
+> * Brandon Mack - *Front-End, Deployment, SysOps, Deliverables* - [infinity3arc3](https://github.com/infinity3arc3)
+> * Jake Fischer - *Graphic Design Outsource*
 
 See the list of contributors [here](https://github.com/SWE-team7/budgettrackr/blob/main/CONTRIBUTORS.md)
 
@@ -86,3 +133,4 @@ Budgettracker adopts the MIT License, see [here](https://github.com/SWE-team7/bu
 # Acknowledgements
 > * budgettrackr contributors
 > * Professor Marco Gerosa
+

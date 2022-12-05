@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Ryzen 5 5600X
+</title>
+
+<!--Load py-script plug-in-->
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<style>
+@font-face {
+   font-family: Isocteur;
+   src: url(isocteur.ttf);
+}
+
+body {
+   color: white;
+   background-color: black;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: Arial;
+}
+
+a {
+   color: white;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 100px 1fr 1fr 50px 1fr 1fr 1fr 1fr;
+   width: 100vw;
+   height: 100vh;
+}
+
+.header {
+   z-index: 10;
+   background-color: #1F0047;
+   color: #1F0047;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   grid-row: 1;
+}
+.image-area {
+   z-index: 10;
+   background-color: white;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 2;
+   grid-row-end: 9;
+   object-fit: contain;
+}
+.detail-area {
+   z-index: 10;
+   color: black;
+   background-color: black;
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 9;
+   justify-self: center;
+   align-self: center;
+}
+
+.title {
+   z-index: 20;
+   letter-spacing: -4px;
+   margin: 50px;
+   font-family: Isocteur;
+   font-style: italic;
+   align-self: center;
+   font-size: 250%;
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.name {
+   z-index: 20;
+   font-weight: bolder;
+   align-self: end;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 250%;
+   grid-column-start: 3;
+   grid-column-end: 5; 
+   grid-row: 2;
+}
+
+.price {
+   z-index: 20;
+   font-weight: bolder;
+   align-self: center;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 250%;
+   grid-column-start: 3;
+   grid-column-end: 4; 
+   grid-row: 3;
+}
+
+.click-here {
+   z-index: 20;
+   font-weight: normal;
+   font-style: italic;
+   align-self: start;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 100%;
+   grid-column-start: 3;
+   grid-column-end: 5; 
+   grid-row: 4;
+}
+
+.description {
+   z-index: 20;
+   font-weight: Bold;
+   align-self: start;
+   justify-self: start;
+   margin-left: 100px;
+   margin-top: 10px;
+   font-size: 125%;
+   grid-column-start: 3;
+   grid-column-end: 5; 
+   grid-row-start: 5;
+   grid-row-end: 7;
+}
+
+.rating {
+   z-index: 30;
+   font-weight: Bold;
+   align-self: center;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 135%;
+   grid-column-start: 3;
+   grid-column-end: 5; 
+   grid-row: 7;
+}
+
+.reviews {
+   z-index: 30;
+   font-weight: normal;
+   align-self: start;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 95%;
+   grid-column-start: 3;
+   grid-column-end: 5; 
+   grid-row: 8;
+}
+
+.storefront {
+   z-index: 30;
+   font-weight: normal;
+   align-self: center;
+   justify-self: start;
+   margin-left: 100px;
+   font-size: 100%;
+   grid-column-start: 4;
+   grid-column-end: 5; 
+   grid-row: 3;
+
+   background: radial-gradient( 5px -9px, circle, white 8%, #1F0047 26px );
+   background-color: #1F0047;
+   border: 1px solid white;
+   border-radius: 25px;
+   height: 35px; 
+   min-width: 14px;
+   padding: 12px 22px 0 22px;
+   text-align: center;
+}
+
+</style>
+
+<body>
+<div class="grid-container">
+   <div class="header">header</div>
+
+   <div class="image-area">
+   <img class="image" src="example_graph.jpg" style="width:800px;max-height:800px;">
+   </div>
+
+   <div class="detail-area">details</div>
+
+   <div class="title"><a href="../../index.html">BudgeTrackr</a></div>
+
+   <div class="name" id="name"></div>
+
+   <div class="price" id="price"></div>
+
+   <div class="click-here"><a href="../index.html">Click here to see images</a></div>
+
+   <div class="description" id="description"></div>
+
+   <div class="rating" id="rating"></div>
+
+   <div class="reviews" id="reviews"></div>
+
+   <div class="storefront" id="storefront"></div>
+
+   <py-script>
+       name_place = Element('name')
+       name_place.write(f"{{Name}}")
+
+       review_place = Element('reviews')
+       review_place.write(f"Number of reviews: {{reviews}}")
+
+       rating_place = Element('rating')
+       rating_place.write(f"Rating: {{ratings}}")
+
+       desc_place = Element('description')
+       desc_place.write(f"Description: {{description}}")
+
+       price_place = Element('price')
+       price_place.write(f"${{price}}")
+
+       store = Element('storefront')
+       link = "http://www.amazon.com"
+       store.write(f'<a href="{link}"> Go to the Amazon Link </a>');
+   </py-script>
+
+</div>
+</body>
+</html>

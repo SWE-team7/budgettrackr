@@ -1,0 +1,31 @@
+name: Test + Build budgettrackr
+
+on: 
+  push:
+    branches: [ main, sandbox ]
+  pull_request:
+    branches: [ main, sandbox ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: autopep8 Formatting
+        id: autopep8
+        uses: peter-evans/autopep8@v1
+        with:
+          args: --recursive --in-place --aggressive --aggressive .
+
+      - name: Dependencies, Test, Build
+        run: docker build . --file Dockerfile
+
