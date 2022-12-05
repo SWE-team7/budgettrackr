@@ -22,14 +22,20 @@ prod_info = Product(user_agent, link)
 class TestProduct(unittest.TestCase):
 
     def test_fetch_name(self):
+        print("\nTesting Product.name")
         product_name = 'AMD Ryzen 5 5600X 6-core 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler'
         fetched_name = prod_info.name
 
         # expected, actual
-        self.assertEqual(product_name, fetched_name)
+        name_check = self.assertEqual(product_name, fetched_name)
         # print results
-        print("Expected  :" + product_name + "\n"
-              + "Fetched   :" + fetched_name + "\n")
+        print("\nExpected  : " + product_name + "\n"
+              + "Fetched   : " + fetched_name)
+
+        if (name_check is None):
+            print("Name Check:      PASSED\n")
+        else:
+            print("Name Check:      FAILED\n")
 
     def test_fetch_price(self):
         """
@@ -37,18 +43,27 @@ class TestProduct(unittest.TestCase):
         checking our price format follows a regular expression for US + EU
         formatted prices
         """
+        print("\nTesting Product.price")
         product_price = prod_info.price
-
         fetched_price = prod_info.price
+        price_check = self.assertEqual(product_price, fetched_price)
+        print("\nExpected  : " + product_price + "\n"
+              + "Fetched   : " + fetched_price)
 
-        self.assertEqual(product_price, fetched_price)
-        print("\nExpected  :" + product_price + "\n"
-              + "Fetched   :" + fetched_price + "\n")
+        if (price_check is None):
+            print("Price Check:     PASSED\n")
+        else:
+            print("Price Check:     FAILED\n")
 
         # define regular expression
-        pattern = re.compile("/\\d{1,3}(?:[.,]\\d{3})*(?:[.,]\\d{2})/g")
-        # check regular expression against fetched price
-        pattern.match(fetched_price)
+        price_regex = r'\$+\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})'
+        # check regex against price
+        regex_check = self.assertRegex(fetched_price, price_regex)
+
+        if (regex_check is None):
+            print("Regex Check:     PASSED\n")
+        else:
+            print("Regex Check:     FAILED\n")
 
 
 if __name__ == '__main__':

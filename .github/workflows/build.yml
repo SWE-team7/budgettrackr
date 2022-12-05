@@ -15,11 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Setup Python Environment
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Verify that the Docker image for the project builds
+      - name: autopep8 Formatting
+        id: autopep8
+        uses: peter-evans/autopep8@v1
+        with:
+          args: --recursive --in-place --aggressive --aggressive .
+
+      - name: Dependencies, Test, Build
         run: docker build . --file Dockerfile
 
