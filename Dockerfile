@@ -20,8 +20,8 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # run the app's tests
-CMD python3 -m unittest tests/test_scrape.py
+RUN python3 -m unittest discover
 
 # run the app
-CMD python3 src/main.py
+CMD ["python3", "src/main.py"]
 
