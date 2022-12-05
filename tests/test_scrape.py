@@ -32,7 +32,7 @@ class TestProduct(unittest.TestCase):
         print("\nExpected  : " + product_name + "\n"
               + "Fetched   : " + fetched_name)
 
-        if (name_check == None):
+        if (name_check is None):
             print("Name Check:      PASSED\n")
         else:
             print("Name Check:      FAILED\n")
@@ -48,19 +48,19 @@ class TestProduct(unittest.TestCase):
         fetched_price = prod_info.price
         price_check = self.assertEqual(product_price, fetched_price)
         print("\nExpected  : " + product_price + "\n"
-              + "Fetched   : " + fetched_price )
-        
-        if (price_check == None):
+              + "Fetched   : " + fetched_price)
+
+        if (price_check is None):
             print("Price Check:     PASSED\n")
         else:
             print("Price Check:     FAILED\n")
-        
+
         # define regular expression
         price_regex = r'\$+\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})'
         # check regex against price
         regex_check = self.assertRegex(fetched_price, price_regex)
-        
-        if (regex_check == None):
+
+        if (regex_check is None):
             print("Regex Check:     PASSED\n")
         else:
             print("Regex Check:     FAILED\n")
