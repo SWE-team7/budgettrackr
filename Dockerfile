@@ -19,7 +19,7 @@ RUN pip install -r requirements.txt
 # copy remaining contents of repo for container
 COPY . /app
 
-run behave
+RUN behave
 # run the app's tests
 RUN python3 -m unittest discover
 
