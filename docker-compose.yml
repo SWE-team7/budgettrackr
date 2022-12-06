@@ -1,6 +1,0 @@
-services:
-  build: .
-  budgettrackr:
-    environment:
-      - PYTHONUNBUFFERED=1
-
