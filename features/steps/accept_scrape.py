@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from behave import *
+from nose.tools import *
 import unittest
 import re
 import src
@@ -29,7 +30,9 @@ class TestProduct(unittest.TestCase):
         fetched_name = prod_info.name
 
         # expected, actual
-        name_check = self.assertEqual(product_name, fetched_name)
+        #name_check = self.assertEqual(product_name, fetched_name)
+        name_check = assert_equal(product_name, fetched_name)
+
         # print results
         print("\nExpected  : " + product_name + "\n"
               + "Fetched   : " + fetched_name)
@@ -39,6 +42,7 @@ class TestProduct(unittest.TestCase):
         else:
             print("Name Check:      FAILED\n")
 
+    @given('A price')
     def test_fetch_price(self):
         """
         this test case ensures our price fetching works repeatedly as well as
@@ -49,7 +53,7 @@ class TestProduct(unittest.TestCase):
         product_price = prod_info.price
         fetched_price = prod_info.price
 
-        price_check = self.assertEqual(product_price, fetched_price)
+        price_check = assert_equal(product_price, fetched_price)
 
         print("\nExpected  : " + product_price + "\n"
               + "Fetched   : " + fetched_price)
@@ -62,19 +66,20 @@ class TestProduct(unittest.TestCase):
         # define regular expression
         price_regex = r'\$+\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})'
         # check regex against price
-        regex_check = self.assertRegex(fetched_price, price_regex)
+        regex_check = assert_regex(fetched_price, price_regex)
 
         if (regex_check is None):
             print("Price Regex Check:     PASSED\n")
         else:
             print("Price Regex Check:     FAILED\n")
 
+    @given('A rating')
     def test_fetch_rating(self):
         print("\nTesting Product.rating")
         product_rating = prod_info.rating
         fetched_rating = prod_info.rating
 
-        rating_check = self.assertEqual(product_rating, fetched_rating)
+        rating_check = assert_equal(product_rating, fetched_rating)
 
         print("\nExpected  : " + product_rating + "\n"
               + "Fetched   : " + fetched_rating)
@@ -85,19 +90,19 @@ class TestProduct(unittest.TestCase):
 
         # decimal {X.x} "out of 5 stars"
         rating_regex = r'^(?!.*\..*\.)[.\d]+ out of 5 stars'
-        rating_regex_check = self.assertRegex(fetched_rating,
-                                              rating_regex)
+        rating_regex_check = assert_regex(fetched_rating,
+                                          rating_regex)
         if (rating_regex_check is None):
             print("Rating Regex Check:     PASSED\n")
         else:
             print("Rating Regex Check:     FAILED\n")
 
+    @given('A rating count')
     def test_fetch_num_ratings(self):
-        print("\nTesting Product.num_ratings")
         product_num_ratings = prod_info.num_ratings
         fetched_num_ratings = prod_info.num_ratings
 
-        rating_num_check = self.assertEqual(
+        rating_num_check = assert_equal(
             product_num_ratings, fetched_num_ratings)
 
         if (rating_num_check is None):
