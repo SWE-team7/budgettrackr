@@ -19,9 +19,11 @@ RUN pip install -r requirements.txt
 # copy remaining contents of repo for container
 COPY . /app
 
-RUN behave
-# run the app's tests
+# run unit tests
 RUN python3 -m unittest discover
+
+# run acceptance tests
+RUN behave
 
 # run the app
 CMD ["python3", "src/main.py"]
