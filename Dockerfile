@@ -25,4 +25,3 @@ RUN python3 -m unittest discover
 
 # run the app
 CMD ["python3", "src/main.py"]
-
